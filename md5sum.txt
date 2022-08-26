@@ -11,6 +11,6 @@
 "episodes/05-wrap-up.Rmd" "a36d0d4c0d57d31075237fdb3cd2acc3" "site/built/05-wrap-up.md" "2022-08-26"
 "instructors/instructor-notes.md" "60b93493cf1da06dfd63255d73854461" "site/built/instructor-notes.md" "2022-08-26"
 "learners/reference.md" "3eeb20922176cd8397cbe420532fd21c" "site/built/reference.md" "2022-08-26"
-"learners/setup.md" "f81f62ee0b5d70f52b205ab65a5d0bbf" "site/built/setup.md" "2022-08-26"
+"learners/setup.md" "31c9276918224249bfb80bbf777a8d05" "site/built/setup.md" "2022-08-26"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2022-08-26"
 "renv/profiles/lesson-requirements/renv.lock" "d6f4c4fd422eed9d9e7bb8a4add4fad5" "site/built/renv.lock" "2022-08-26"

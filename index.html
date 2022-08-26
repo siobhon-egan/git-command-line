@@ -136,20 +136,12 @@
                   <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         Summary and Setup
         </span>
-      </button>
+      
     </div><!--/div.accordion-header-->
-        
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
-      <div class="accordion-body">
-        <ul><li><a href="#data-sets">Data Sets</a></li>
-<li><a href="#software-setup">Software Setup</a></li>
-        </ul></div><!--/div.accordion-body-->
-    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -274,13 +266,24 @@
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section><section id="setup"><p>Setup instructions live in this document. Please specify the tools and the data sets the Learner needs to have installed.</p>
-<section id="data-sets"><h2 class="section-heading">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a>
-</h2>
-<hr class="half-width"><p>Download the <a href="data/data.zip">data zip file</a> and unzip it to your Desktop</p>
-</section><section id="software-setup"><h2 class="section-heading">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a>
-</h2>
-<hr class="half-width"><div id="discussion1" class="callout discussion">
+</section><section id="setup"><p>To participate in this workshop, you will need access to software as described below. In addition, you will need an up-to-date web browser.</p>
+<div id="prereq1" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div id="format" class="callout-inner">
+<h3 class="callout-title">Format<a class="anchor" aria-label="anchor" href="#format"></a>
+</h3>
+<div class="callout-content">
+<p>This workshop is designed to provide a practical and ‘hand-on’ introduction to git. It does not cover all aspects of version control/git theory.</p>
+</div>
+</div>
+</div>
+<div class="section level1">
+<h1 id="software"><strong>Software</strong><a class="anchor" aria-label="anchor" href="#software"></a></h1>
+<div class="section level2">
+<h2 id="bash">Bash<a class="anchor" aria-label="anchor" href="#bash"></a></h2>
+<div id="discussion1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -288,7 +291,8 @@ any links that you are not going to use.
 <h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details"></a>
 </h3>
 <div class="callout-content">
-<p>Setup for different systems can be presented in dropdown menus via a <code>solution</code> tag. They will join to this discussion block, so you can give a general overview of the software used in this lesson here and fill out the individual operating systems (and potentially add more, e.g. online setup) in the solutions blocks.</p>
+<p>The shell is a program where users can type commands. The most popular Unix shell is <strong>Bash</strong> (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.</p>
+<p>Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.</p>
 </div>
 </div>
 </div>
@@ -299,9 +303,40 @@ any links that you are not going to use.
   Windows
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Use PuTTY</p>
+<p>Computers with Windows operating systems do not automatically have a Unix Shell program installed. In this lesson, we encourage you to use an emulator included in <a href="https://carpentries.github.io/workshop-template/#shell" class="external-link">Git for Windows</a>, which gives you access to both Bash shell commands and Git.</p>
+<ul><li>
+<strong>1.</strong> Download the Git for Windows <a href="https://gitforwindows.org/" class="external-link">installer</a>.</li>
+<li>
+<strong>2.</strong> Run the installer and follow the steps below:
+<ul><li>2.1. Click on “Next” four times (two times if you’ve previously installed Git). You don’t need to change anything in the Information, location, components, and start menu screens.</li>
+<li>2.2. <strong>From the dropdown menu, “Choosing the default editor used by Git”, select “Use the Nano editor by default” (NOTE: you will need to scroll up to find it) and click on “Next”.</strong>
+</li>
+<li>2.3. On the page that says “Adjusting the name of the initial branch in new repositories”, ensure that “Let Git decide” is selected. This will ensure the highest level of compatibility for our lessons.</li>
+<li>2.4. Ensure that “Git from the command line and also from 3rd-party software” is selected and click on “Next”. (If you don’t do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the “Git from the command line and also from 3rd-party software” option.)</li>
+<li>2.5. Select “Use bundled OpenSSH”.</li>
+<li>2.6. Ensure that “Use the native Windows Secure Channel Library” is selected and click on “Next”.</li>
+<li>2.7. Ensure that “Checkout Windows-style, commit Unix-style line endings” is selected and click on “Next”.</li>
+<li>2.8. <strong>Ensure that “Use Windows’ default console window” is selected and click on “Next”.</strong>
+</li>
+<li>2.9. Ensure that “Default (fast-forward or merge) is selected and click”Next"</li>
+<li>2.10. Ensure that “Git Credential Manager” is selected and click on “Next”.</li>
+<li>2.11. Ensure that “Enable file system caching” is selected and click on “Next”.</li>
+<li>2.12. Click on “Install”.</li>
+<li>2.13. Click on “Finish” or “Next”.</li>
+</ul></li>
+<li>
+<strong>3.</strong> If your “HOME” environment variable is not set (or you don’t know what this is):
+<ul><li>3.1. Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)</li>
+<li>3.2. Type the following line into the command prompt window exactly as shown: <code>setx HOME "%USERPROFILE%"</code>
+</li>
+<li>3.3. Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code>
+</li>
+<li>3.4. Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd>.</li>
+</ul></li>
+</ul><p><a href="https://youtu.be/339AEqk9c-8" class="external-link">Check out video tutorial here</a></p>
+<p>Once installed, you can open a terminal by running the program <strong>Git Bash</strong> from the Windows start menu.</p>
 </div>
 </div>
 </div>
@@ -313,9 +348,17 @@ any links that you are not going to use.
   MacOS
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>Use Terminal.app</p>
+<p>For a Mac computer running macOS Mojave or earlier releases, the default Unix Shell is Bash. For a Mac computer running macOS Catalina or later releases, the default Unix Shell is Zsh. Your default shell is available via the Terminal program within your <code>/Applications/Utilities</code> folder.</p>
+<p>To open Terminal, try one or both of the following:</p>
+<ul><li>In Finder, select the Go menu, then select Utilities. Locate Terminal in the Utilities folder and open it.</li>
+<li>Use the Mac ‘Spotlight’ computer search function. Search for: <code>Terminal</code> and press <kbd>Return</kbd>.</li>
+</ul><p>See the Git installation <a href="https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial" class="external-link">video tutorial</a> for an example on how to open the Terminal. You may want to keep Terminal in your dock for this workshop.</p>
+<p>To check if your machine is set up to use something other than Bash, type <code>echo $SHELL</code> in Terminal and press the <kbd>Return</kbd> key.</p>
+<p>If your machine is set up to use something other than Bash, you can run it by opening a terminal and typing <code>bash</code>.</p>
+<p>If you want to change your default shell, see this <a href="https://support.apple.com/en-au/HT208050" class="external-link">Apple Support article</a> and follow the instructions on “How to change your default shell”.</p>
+<p><a href="http://www.youtube.com/watch?v=9LQhwETCdwY" class="external-link">Check out video tutorial here</a></p>
 </div>
 </div>
 </div>
@@ -327,9 +370,155 @@ any links that you are not going to use.
   Linux
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
-<p>Use Terminal</p>
+<p>The default shell is usually Bash and there is usually no need to install anything.</p>
+<p>To see if your default shell is Bash type <code>echo $SHELL</code> in a terminal and press the <kbd>Enter</kbd> key. If the message printed does not end with ‘/bash’ then your default is something else and you can run Bash by typing <code>bash</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  ChromeOS
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<p>Install a terminal emulator such as Termux from the Google Play Store on your Chrome OS device. From the terminal emulator that you installed, install Git. For example, in Termux, enter <code>apt install git</code> and then type <code>y</code> when prompted.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="git">Git<a class="anchor" aria-label="anchor" href="#git"></a></h2>
+<div id="discussion2" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="details-1" class="callout-inner">
+<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details-1"></a>
+</h3>
+<div class="callout-content">
+<p>Git is a version control system that lets you track who made changes to what when and has options for easily updating a shared or public version of your code on <a href="https://github.com/" class="external-link">github.com</a>. You will need a <a href="https://help.github.com/articles/supported-browsers/" class="external-link">supported web browser</a>.</p>
+<p>You will need an account at <a href="https://github.com/" class="external-link">github.com</a> for parts of the Git lesson. Basic GitHub accounts are free. We encourage you to create a GitHub account if you don’t have one already. Please consider what personal information you’d like to reveal. For example, you may want to review these <a href="https://help.github.com/articles/keeping-your-email-address-private/" class="external-link">instructions for keeping your email address private</a> provided at GitHub.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
+  Windows
+  </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
+<p>Git should be installed on your computer as part of your Bash install (see the <a href="https://carpentries.github.io/workshop-template/#shell" class="external-link">Shell installation instructions</a>).</p>
+<p>You can check by opening the program <strong>Git Bash</strong> and entering <code>git</code>.</p>
+<p>If you see this error, then you should try to install git again.</p>
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>'git' is not recognised as an internal or external command,
+operable program or batch file.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6">
+  MacOS
+  </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<p><strong>For macOS</strong>, install Git for Mac by downloading and running the most recent “mavericks” installer from <a href="http://sourceforge.net/projects/git-osx-installer/files/" class="external-link">this list</a>. Because this installer is not signed by the developer, you may have to right click (control click) on the .pkg file, click Open, and click Open on the pop up window. After installing Git, there will not be anything in your <code>/Applications</code> folder, as Git is a command line program. <strong>For older versions of OS X (10.5-10.8)</strong> use the most recent available installer labelled “snow-leopard” <a href="http://sourceforge.net/projects/git-osx-installer/files/" class="external-link">available here</a>.</p>
+<p>You can check your version of git by opening <strong>Terminal</strong> and entering <code>git --version</code>.</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>git version 2.24.3 (Apple Git-128)</code></pre>
+</div>
+<p><a href="https://youtu.be/9LQhwETCdwY" class="external-link">Check out video tutorial here</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7">
+  Linux
+  </h4>
+</button>
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div class="accordion-body">
+<p>If Git is not already available on your machine you can try to install it via your distro’s package manager. For Debian/Ubuntu run <code>sudo apt-get install git</code> and for Fedora run <code>sudo dnf install git</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="text-editor">Text editor<a class="anchor" aria-label="anchor" href="#text-editor"></a></h2>
+<div id="discussion3" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="details-2" class="callout-inner">
+<h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details-2"></a>
+</h3>
+<div class="callout-content">
+<p>When you’re writing code, it’s nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words. The default text editor on macOS and Linux is usually set to Vim, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case ‘q’, exclamation mark), then hitting <kbd>Return</kbd> to return to the shell.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8">
+  Windows
+  </h4>
+</button>
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div class="accordion-body">
+<p>nano is a basic editor and the default that instructors use in the workshop. It is installed along with Git.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
+  <h4 class="accordion-header" id="headingSolution9">
+  MacOS
+  </h4>
+</button>
+<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div class="accordion-body">
+<p>nano is a basic editor and the default that instructors use in the workshop. See the Git installation video tutorial for an example on how to open nano. It should be pre-installed.</p>
+<p><a href="https://youtu.be/9LQhwETCdwY" class="external-link">Check out video tutorial here</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution10" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution10" aria-expanded="false" aria-controls="collapseSolution10">
+  <h4 class="accordion-header" id="headingSolution10">
+  Linux
+  </h4>
+</button>
+<div id="collapseSolution10" class="accordion-collapse collapse" aria-labelledby="headingSolution10" data-bs-parent="#accordionSolution10">
+<div class="accordion-body">
+<p>nano is a basic editor and the default that instructors use in the workshop. It should be pre-installed.</p>
 </div>
 </div>
 </div>
@@ -338,7 +527,11 @@ any links that you are not going to use.
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
  -->
-</section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
+</div>
+</div>
+
+
+      </section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="01-git-introduction.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
