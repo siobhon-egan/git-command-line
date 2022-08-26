@@ -8,13 +8,13 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: The Carpentries Incubator
-carpentry: incubator
+carpentry: swc
 
 # Overall title for pages.
-title: Lesson Title
+title: Git command line
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~
+created: 2022-08-26
 
 # Comma-separated list of keywords for the lesson
 keywords: software, data, lesson, The Carpentries
@@ -33,23 +33,23 @@ source: https://github.com/carpentries/workbench-template-rmd
 branch: main
 
 # Who to contact if there are any issues
-contact: team@carpentries.org
+contact: siobhon.egan@murdoch.edu.au
 
 # Navigation ------------------------------------------------
-# 
+#
 # Use the following menu items to specify the order of
 # individual pages in each dropdown section. Leave blank to
 # include all pages in the folder.
 #
 # Example -------------
-# 
+#
 # episodes:
 # - introduction.md
 # - first-steps.md
-# 
+#
 # learners:
 # - setup.md
-# 
+#
 # instructors:
 # - instructor-notes.md
 #
@@ -57,15 +57,15 @@ contact: team@carpentries.org
 # - one-learner.md
 # - another-learner.md
 
-# Order of episodes in your lesson 
-episodes: 
+# Order of episodes in your lesson
+episodes:
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
