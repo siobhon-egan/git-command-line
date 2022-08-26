@@ -1,5 +1,5 @@
 ---
-title: 'Configuration and your first repository'
+title: 'Getting started - git config and your first repository'
 teaching: 5
 exercises: 15
 ---
@@ -8,6 +8,7 @@ exercises: 15
 
 - How do I get set up to use Git?
 - How do I establish authenticate my GitHub account?
+- How do I get started on a new repository?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,7 +16,7 @@ exercises: 15
 
 - Configure `git` the first time it is used on a computer.
 - Understand the meaning of the `--global configuration` flag.
-- Authentication of GitHub account
+- Authentication of GitHub account (using PAT)
 - Clone remote repository to local machine
 - Push to or pull from a remote repository.
 
