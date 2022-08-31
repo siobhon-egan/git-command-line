@@ -186,5 +186,5 @@ But be careful! Running this command in the wrong directory will remove the enti
 
 :::::: keypoints
  - `git init` initializes a repository.
- - Git stores all of its repository data in the `.git `directory.
+ - Git stores all of its repository data in the `.git` directory.
 ::::::
