@@ -7,4 +7,6 @@ any links that you are not going to use.
 [r-markdown]: https://rmarkdown.rstudio.com/
 [rstudio]: https://www.rstudio.com/
 [carpentries-workbench]: https://carpentries.github.io/sandpaper-docs/
+[commit-messages]: https://chris.beams.io/posts/git-commit/
+[git-references]: https://git-scm.com/book/en/v2/Git-Internals-Git-References
 
