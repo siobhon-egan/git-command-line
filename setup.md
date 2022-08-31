@@ -2,17 +2,7 @@
 title: Setup
 ---
 
-To participate in this workshop, you will need access to software as described below. In addition, you will need an up-to-date web browser.
-
-:::::: prereq
-
-### Format
-
-This workshop is designed to provide a practical and 'hand-on' introduction to git. It does not cover all aspects of version control/git theory.
-
-:::::::::::::
-
-# **Software**
+# :computer: **Software requirements**
 
 ## Bash
 
@@ -21,9 +11,11 @@ This workshop is designed to provide a practical and 'hand-on' introduction to g
 ### Details
 
 The shell is a program where users can type commands. 
-The most popular Unix shell is **Bash** (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.
+The most popular Unix shell is **Bash** (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). 
+Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.
 
-Some computers include a default Unix Shell program. The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.
+Some computers include a default Unix Shell program. 
+The steps below describe some methods for identifying and opening a Unix Shell program if you already have one installed. There are also options for identifying and downloading a Unix Shell program, a Linux/UNIX emulator, or a program to access a Unix Shell on a server.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -94,15 +86,6 @@ To see if your default shell is Bash type `echo $SHELL` in a terminal and press 
 
 :::::::::::::::::::::::::
 
-:::::::::::::::: solution
-
-### ChromeOS
-
-Install a terminal emulator such as Termux from the Google Play Store on your Chrome OS device.
-From the terminal emulator that you installed, install Git. For example, in Termux, enter `apt install git` and then type `y` when prompted.
-
-:::::::::::::::::::::::::
-
 ## Git
 
 ::::::::::::::::::::::::::::::::::::::: discussion
@@ -161,7 +144,9 @@ If Git is not already available on your machine you can try to install it via yo
 
 ### Details
 
-When you're writing code, it's nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words. The default text editor on macOS and Linux is usually set to Vim, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to return to the shell.
+When you're writing code, it's nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words. 
+The default text editor on macOS and Linux is usually set to *Vim*, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to return to the shell.
+To exit *nano* text editor (which is recommended during later lessons) press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
