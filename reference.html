@@ -18,15 +18,7 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Software Carpentry" src="assets/images/software-logo.svg"><abbr class="icon" title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught." style="text-decoration: unset">
-           
-          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link" style="color: #383838">Pre-Alpha
-            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="color: #FF4955"></i>
-          </a>
-          <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
-        </abbr>
-        
-      </div>
+        <img alt="Software Carpentry" src="assets/images/software-logo.svg"></div>
     </div>
     <div class="selector-container ">
       
@@ -145,7 +137,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-git-introduction.html">1. Git Basics</a>
+        <a href="01-basics.html">1. Git Basics</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -154,7 +146,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-getting-started.html">2. Getting started - git config and your first repository</a>
+        <a href="02-setup.html">2. Setting Up Git</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -163,7 +155,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-tracking-history.html">3. Tracking changes and history</a>
+        <a href="03-create.html">3. Creating a Repository</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -172,7 +164,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-collaborating-conflicts.html">4. Collaborating, conflicts and ignoring</a>
+        <a href="04-changes.html">4. Tracking Changes</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -181,7 +173,34 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-wrap-up.html">5. Wrap-up</a>
+        <a href="05-history.html">5. Exploring History</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="06-ignore.html">6. Ignoring Things</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="07-remotes.html">7. Remotes in GitHub</a>
+    </div><!--/div.accordion-header-->
+        
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="08-wrap-up.html">8. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -238,22 +257,131 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Learner Reference</h1>
-        <p> Last updated on 2022-08-26 | <a href="https://github.com/carpentries/workbench-template-rmd/edit/main/learners/reference.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-08-31 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/learners/reference.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 
         
-<section id="glossary"><h2 class="section-heading">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a>
+
+<section id="quick-reference"><h2 class="section-heading">Quick reference<a class="anchor" aria-label="anchor" href="#quick-reference"></a>
 </h2>
-<hr class="half-width"><dl><dt>sandpaper</dt>
-<dd>An R package from The Carpentries that is the main user interface for The Carpentries Workbench. More information at: <a href="https://carpentries.github.io/sandpaper" class="external-link uri">https://carpentries.github.io/sandpaper</a>
+<hr class="half-width"><div class="section level3">
+<h3 id="navigating-the-shell">Navigating the shell<a class="anchor" aria-label="anchor" href="#navigating-the-shell"></a></h3>
+<dl><dt><code>pwd</code></dt>
+<dd>print working directory
 </dd>
-<dt>varnish</dt>
-<dd>An R package from The Carpentries that provides the HTML templates, CSS, and JavaScript code for lesson websites generated via The Carpentries Workbench. More information at: <a href="https://carpentries.github.io/varnish" class="external-link uri">https://carpentries.github.io/varnish</a>
+<dt><code>ls</code></dt>
+<dd>list directory :
 </dd>
-<dt>pegboard</dt>
-<dd>An R package from The Carpentries that provides parsing and validation of markdown source materials for The Carpentries Workbench. More information at: <a href="https://carpentries.github.io/pegboard" class="external-link uri">https://carpentries.github.io/pegboard</a>
+<dd><ul><li>
+<code>-l</code>: list file information</li>
+</ul></dd>
+<dd><ul><li>
+<code>-lh</code>: list human readable file information</li>
+</ul></dd>
+<dt><code>cd</code></dt>
+<dd>change directory
+</dd>
+<dt><code>mkdir</code></dt>
+<dd>make directory
+</dd>
+<dt><code>cat</code></dt>
+<dd>send file or files to output (in most cases, print to shell)
+</dd>
+<dt><code>head</code></dt>
+<dd>output first parts of a file or files
+</dd>
+<dt><code>tail</code></dt>
+<dd>output last parts of a file or files
+</dd>
+<dt><code>mv</code></dt>
+<dd>rename or move a file or files. Syntax for renaming a file: <code>mv FILENAME NEWFILENAME</code>
+</dd>
+<dt><code>cp</code></dt>
+<dd>copy a file or files. Syntax: <code>cp FILENAME NEWFILENAME</code>
+</dd>
+<dt><code>&gt;</code></dt>
+<dd>redirect output. Syntax with <code>cat</code>: <code>cat FILENAME1 FILENAME2 &gt; NEWFILENAME</code>
+</dd>
+<dt><code>rm</code></dt>
+<dd>remove a file or files. NB: <em>USE WITH CAUTION!!!</em>
+</dd>
+</dl></div>
+<div class="section level3">
+<h3 id="git-commands">Git commands<a class="anchor" aria-label="anchor" href="#git-commands"></a></h3>
+<dl><dt><code>git init</code></dt>
+<dd>create a new local git repository
+</dd>
+<dt><code>git status</code></dt>
+<dd>view the status of your files in the working directory and staging area
+</dd>
+<dt><code>git add</code></dt>
+<dd>tell git to start tracking a file, or a series of files
+</dd>
+<dt><code>git commit</code></dt>
+<dd>save file changes from the staging area permanently to the project history
+</dd>
+<dt><code>git push</code></dt>
+<dd>upload all commits to a remote repository, such as GitHub
+</dd>
+<dt><code>git log</code></dt>
+<dd>show history of commits in reverse chronological order
+</dd>
+<dt><code>git diff</code></dt>
+<dd>show changes made to tracked files
+</dd>
+<dt><code>git pull</code></dt>
+<dd>download upstream changes and merge them into your local repository
+</dd>
+<dt><code>git remote add origin</code></dt>
+<dd>add a remote repository named ‘origin’, to upload changes to or download changes from
+</dd>
+</dl></div>
+</section><section id="glossary"><h2 class="section-heading">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a>
+</h2>
+<hr class="half-width"><dl><dt>changeset</dt>
+<dd>A group of changes to one or more files that are or will be added to a single <a href="#commit">commit</a> in a <a href="#version-control">version control</a> <a href="#repository">repository</a>.
+</dd>
+<dt>commit</dt>
+<dd>To record the current state of a set of files (a <a href="#changeset">changeset</a>) in a <a href="#version-control">version control</a> <a href="#repository">repository</a>. As a noun, the result of committing, i.e. a recorded changeset in a repository. If a commit contains changes to multiple files, all of the changes are recorded together.
+</dd>
+<dt>conflict</dt>
+<dd>A change made by one user of a <a href="#version-control">version control system</a> that is incompatible with changes made by other users. Helping users <a href="#resolve">resolve</a> conflicts is one of version control’s major tasks.
+</dd>
+<dt>HTTP</dt>
+<dd>The Hypertext Transfer <a href="#protocol">Protocol</a> used for sharing web pages and other data on the World Wide Web.
+</dd>
+<dt>merge</dt>
+<dd>(a repository): To reconcile two sets of changes to a <a href="#repository">repository</a>.
+</dd>
+<dt>protocol</dt>
+<dd>A set of rules that define how one computer communicates with another. Common protocols on the Internet include <a href="#http">HTTP</a> and <a href="#ssh">SSH</a>.
+</dd>
+<dt>remote</dt>
+<dd>(of a repository) A version control <a href="#repository">repository</a> connected to another, in such way that both can be kept in sync exchanging <a href="#commit">commits</a>.
+</dd>
+<dt>repository</dt>
+<dd>A storage area where a <a href="#version-control">version control</a> system stores the full history of <a href="#commit">commits</a> of a project and information about who changed what, when.
+</dd>
+<dt>resolve</dt>
+<dd>To eliminate the <a href="#conflict">conflicts</a> between two or more incompatible changes to a file or set of files being managed by a <a href="#version-control">version control</a> system.
+</dd>
+<dt>revision</dt>
+<dd>A synonym for <a href="#commit">commit</a>.
+</dd>
+<dt>SHA-1</dt>
+<dd>
+<a href="https://en.wikipedia.org/wiki/SHA-1" class="external-link">SHA-1 hashes</a> is what Git uses to compute identifiers, including for commits. To compute these, Git uses not only the actual change of a commit, but also its metadata (such as date, author, message), including the identifiers of all commits of preceding changes. This makes Git commit IDs virtually unique. I.e., the likelihood that two commits made independently, even of the same change, receive the same ID is exceedingly small.
+</dd>
+<dt>SSH</dt>
+<dd>The Secure Shell <a href="#protocol">protocol</a> used for secure communication between computers.
+</dd>
+<dt>timestamp</dt>
+<dd>A record of when a particular event occurred.
+</dd>
+<dt>version control</dt>
+<dd>A tool for managing changes to a set of files. Each set of changes creates a new <a href="#commit">commit</a> of the files; the version control system allows users to recover old commits reliably, and helps manage conflicting changes made by different users.
 </dd>
 </dl><!-- 
 Place links that you need to refer to multiple times across pages here. Delete
@@ -274,15 +402,15 @@ any links that you are not going to use.
       </div><!--/div.row-->
       		<footer class="row footer mx-md-3"><hr><div class="col-md-6">
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-rmd/edit/main/learners/reference.md" class="external-link">Edit on Github</a> | <a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> | <a href="https://github.com/carpentries/workbench-template-rmd/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:siobhon.egan@murdoch.edu.au">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/siobhon-egan/git-command-line/edit/main/learners/reference.md" class="external-link">Edit on Github</a> | <a href="https://github.com/siobhon-egan/git-command-line/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> | <a href="https://github.com/siobhon-egan/git-command-line/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/siobhon-egan/git-command-line/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:siobhon.egan@murdoch.edu.au">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.9.4)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.5" class="external-link">sandpaper (0.9.5)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.1" class="external-link">pegboard (0.3.1)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
@@ -296,17 +424,17 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://carpentries.github.io/workbench-template-rmd/reference.html",
+  "@id": "https://siobhon-egan.github.io/git-command-line/reference.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "Learner Reference",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-rmd/reference.html",
-  "identifier": "https://carpentries.github.io/workbench-template-rmd/reference.html",
+  "url": "https://siobhon-egan.github.io/git-command-line/reference.html",
+  "identifier": "https://siobhon-egan.github.io/git-command-line/reference.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-08-26",
-  "datePublished": "2022-08-30"
+  "dateModified": "2022-08-31",
+  "datePublished": "2022-08-31"
 }
 
   </script><script>

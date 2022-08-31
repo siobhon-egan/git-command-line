@@ -33,15 +33,8 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Software Carpentry" src="../assets/images/software-logo.svg"><abbr class="icon" title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught." style="text-decoration: unset">
-           
-          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link" style="color: #383838">Pre-Alpha
-            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="color: #FF4955"></i>
-          </a>
-          <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
-        </abbr>
-        
-      </div>
+        <img alt="Software Carpentry" src="../assets/images/software-logo.svg">
+</div>
     </div>
     <div class="selector-container ">
       
@@ -177,7 +170,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-git-introduction.html">1. Git Basics</a>
+        <a href="01-basics.html">1. Git Basics</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -189,7 +182,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-getting-started.html">2. Getting started - git config and your first repository</a>
+        <a href="02-setup.html">2. Setting Up Git</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -201,7 +194,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-tracking-history.html">3. Tracking changes and history</a>
+        <a href="03-create.html">3. Creating a Repository</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -213,7 +206,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-collaborating-conflicts.html">4. Collaborating, conflicts and ignoring</a>
+        <a href="04-changes.html">4. Tracking Changes</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -225,7 +218,43 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-wrap-up.html">5. Wrap-up</a>
+        <a href="05-history.html">5. Exploring History</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="06-ignore.html">6. Ignoring Things</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="07-remotes.html">7. Remotes in GitHub</a>
+    </div>
+<!--/div.accordion-header-->
+        
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="08-wrap-up.html">8. Wrap-up</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -287,39 +316,62 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="01-git-introduction"><h2 class="section-heading"><a href="01-git-introduction.html">Git Basics</a></h2>
+<section id="01-basics"><h2 class="section-heading"><a href="01-basics.html">Git Basics</a></h2>
 <hr class="half-width">
 <ul>
 <li>Version control is like an unlimited ‘undo’.</li>
 <li>Version control also allows many people to work in parallel.</li>
-</ul></section><section id="02-getting-started"><h2 class="section-heading"><a href="02-getting-started.html">Getting started - git config and your first repository</a></h2>
+</ul></section><section id="02-setup"><h2 class="section-heading"><a href="02-setup.html">Setting Up Git</a></h2>
 <hr class="half-width">
 <ul>
+<li>Git and GitHub are <em>not</em> the same thing. <strong>Git</strong> is an open source version control tool, <strong>GitHub</strong> is a company that hosts Git repositories in the web and provides a web interface to interact with repos they host.</li>
 <li>Use <code>git config</code> with the <code>--global</code> option to configure a user name, email address, editor, and other preferences once per machine.</li>
 <li>Get help with <code>git help</code>
 </li>
-<li>Authentication to GitHub via the command line can be via HTTPS and SSH - here we used Personal Access Token (PAT)</li>
-<li>Clone repository with <code>git clone</code>
-</li>
-</ul></section><section id="03-tracking-history"><h2 class="section-heading"><a href="03-tracking-history.html">Tracking changes and history</a></h2>
+</ul></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Creating a Repository</a></h2>
 <hr class="half-width">
 <ul>
 <li>
-<code>git status</code> is your go-to check of the git repo</li>
-<li><code>git add</code></li>
-<li><code>git commit -m "message</code></li>
-<li><code>git push</code></li>
-</ul></section><section id="04-collaborating-conflicts"><h2 class="section-heading"><a href="04-collaborating-conflicts.html">Collaborating, conflicts and ignoring</a></h2>
+<code>git init</code> initializes a repository.</li>
+<li>Git stores all of its repository data in the <code>.git</code>directory.</li>
+</ul></section><section id="04-changes"><h2 class="section-heading"><a href="04-changes.html">Tracking Changes</a></h2>
 <hr class="half-width">
 <ul>
-<li>Conflicts occur when two or more people change the same lines of the same file.</li>
-<li>The version control system does not allow people to overwrite each other’s changes blindly, but highlights conflicts so that they can be resolved.</li>
+<li>
+<code>git status</code> shows the status of a repository.</li>
+<li>Files can be stored in a project’s working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).</li>
+<li>
+<code>git add</code> puts files in the staging area.</li>
+<li>
+<code>git commit</code> saves the staged content as a new commit in the local repository.</li>
+<li>Write a commit message that accurately describes your changes.</li>
+</ul></section><section id="05-history"><h2 class="section-heading"><a href="05-history.html">Exploring History</a></h2>
+<hr class="half-width">
+<ul>
+<li>
+<code>git diff</code> displays differences between commits.</li>
+<li>
+<code>git checkout</code> recovers old versions of files.</li>
+</ul></section><section id="06-ignore"><h2 class="section-heading"><a href="06-ignore.html">Ignoring Things</a></h2>
+<hr class="half-width">
+<ul>
 <li>The <code>.gitignore</code> file tells Git what files to ignore.</li>
-</ul></section><section id="05-wrap-up"><h2 class="section-heading"><a href="05-wrap-up.html">Wrap-up</a></h2>
+</ul></section><section id="07-remotes"><h2 class="section-heading"><a href="07-remotes.html">Remotes in GitHub</a></h2>
 <hr class="half-width">
 <ul>
-<li>point 1</li>
-<li>point 2</li>
+<li>A local Git repository can be connected to one or more remote repositories.</li>
+<li>Authentication to GitHub via the command line can be via HTTPS and SSH - here we used Personal Access Token (PAT)</li>
+<li>
+<code>git push</code> copies changes from a local repository to a remote repository.</li>
+<li>
+<code>git pull</code> copies changes from a remote repository to a local repository.</li>
+</ul></section><section id="08-wrap-up"><h2 class="section-heading"><a href="08-wrap-up.html">Wrap-up</a></h2>
+<hr class="half-width">
+<ul>
+<li>Keep a copy of GitHub cheat-sheet handy when starting out. <a href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf" class="external-link"><em>PDF copy</em></a>
+</li>
+<li>
+<a href="https://docs.github.com/en" class="external-link">GitHub Docs pages</a> is your go-to for extensive documentation.</li>
 </ul></section>
 </div>
     </main>
@@ -331,15 +383,15 @@
       		<footer class="row footer mx-md-3"><hr>
 <div class="col-md-6">
 				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-rmd/edit/main/README.md" class="external-link">Edit on Github</a> | <a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> | <a href="https://github.com/carpentries/workbench-template-rmd/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-rmd/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:siobhon.egan@murdoch.edu.au">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/siobhon-egan/git-command-line/edit/main/README.md" class="external-link">Edit on Github</a> | <a href="https://github.com/siobhon-egan/git-command-line/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> | <a href="https://github.com/siobhon-egan/git-command-line/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/siobhon-egan/git-command-line/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:siobhon.egan@murdoch.edu.au">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.9.4)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.5" class="external-link">sandpaper (0.9.5)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.1" class="external-link">pegboard (0.3.1)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
@@ -354,17 +406,17 @@
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://carpentries.github.io/workbench-template-rmd/instructor/key-points.html",
+  "@id": "https://siobhon-egan.github.io/git-command-line/instructor/key-points.html",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries",
   "name": "Key Points",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-rmd/instructor/key-points.html",
-  "identifier": "https://carpentries.github.io/workbench-template-rmd/instructor/key-points.html",
+  "url": "https://siobhon-egan.github.io/git-command-line/instructor/key-points.html",
+  "identifier": "https://siobhon-egan.github.io/git-command-line/instructor/key-points.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-08-30",
-  "datePublished": "2022-08-30"
+  "dateModified": "2022-08-31",
+  "datePublished": "2022-08-31"
 }
 
   </script><script>

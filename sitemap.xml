@@ -1,99 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/01-git-introduction.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/01-basics.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/01-introduction.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/01-git-introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/02-getting-started.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/01-introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/03-tracking-history.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/02-getting-started.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/04-collaborating-conflicts.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/02-setup.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/05-wrap-up.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/03-create.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/CODE_OF_CONDUCT.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/03-tracking-history.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/LICENSE.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/04-changes.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/aio.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/04-collaborating-conflicts.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/images.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/05-history.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/index.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/05-wrap-up.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/01-git-introduction.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/06-ignore.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/01-introduction.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/07-remotes.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/02-getting-started.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/08-wrap-up.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/03-tracking-history.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/04-collaborating-conflicts.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/05-wrap-up.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/LICENSE.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/aio.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/01-basics.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/images.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/01-git-introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/index.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/01-introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/instructor-notes.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/02-getting-started.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/key-points.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/02-setup.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/keypoints.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/03-create.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/profiles.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/03-tracking-history.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/reference.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/04-changes.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor-notes.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/04-collaborating-conflicts.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/key-points.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/05-history.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/keypoints.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/05-wrap-up.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/profiles.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/06-ignore.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/reference.html</loc>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/07-remotes.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/08-wrap-up.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/aio.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/images.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/keypoints.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/keypoints.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://siobhon-egan.github.io/git-command-line/reference.html</loc>
   </url>
 </urlset>
