@@ -50,7 +50,7 @@ When you open nano it was appear like this. Start typing your text.
 In this case "Cold and dry, but everything is my favorite color"
 ![](fig/nano-02.png)
 
-To exit the editor on macOS press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.
+To exit the editor press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>. _To exit **without** saving changes press <kbd>N</kbd> and <kbd>Return</kbd>_
 
 ![](fig/nano-03.png)
 

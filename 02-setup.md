@@ -134,6 +134,8 @@ Note that **Vim** is the default editor for many programs.
 If you haven’t used Vim before and wish to exit a session without saving your changes, press <kbd>Esc</kbd> then type `:q!` and hit <kbd>Return</kbd>.
 If you want to save your changes and quit, press <kbd>Esc</kbd> then type `:wq` and hit <kbd>Return</kbd>.
 
+In this lesson we instruct you to use *nano*. To exit nano editor press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.
+
 ::::::::::::::::::::::::::::::::::::::: 
 
 

@@ -43,6 +43,8 @@ To participate in this workshop, you will need access to software as described b
 
 ### Format
 
+The goal of this session is for learners to become familiar with git and have the confidence to use it in their study/work, and to have the knowledge to know what questions to ask when they get stuck.
+
 This workshop is designed to provide a practical and 'hands-on' introduction to git. It does not cover all aspects of version control/git theory.
 
 :::::::::::::
