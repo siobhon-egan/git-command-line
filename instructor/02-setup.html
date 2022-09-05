@@ -212,7 +212,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-wrap-up.html">8. Wrap-up</a>
+        <a href="08-wrapup.html">8. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -269,7 +269,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Setting Up Git</h1>
-        <p> Last updated on 2022-08-31 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/02-setup.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-09-05 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/02-setup.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         <div class="text-end">
@@ -324,7 +324,7 @@
 <li>what our preferred text editor is,</li>
 <li>and that we want to use these settings globally (i.e. for every project).</li>
 </ul><p>On a command line, Git commands are written as <code>git verb options</code>, where <code>verb</code> is what we actually want to do and options is additional optional information which may be needed for the <code>verb.</code> So here is how Dracula sets up his new laptop:</p>
-<p>Open a new terminal and configure your git workspace.</p>
+<p>Open terminal (MacOS) or Git Bash (WindowsOS) and configure your git workspace:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -332,7 +332,7 @@
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"vlad@tran.sylvan.ia"</span></span></code></pre>
 </div>
 <p>Please use your own name and email address instead of Dracula’s. This user name and email will be associated with your subsequent Git activity, which means that any changes pushed to <a href="https://github.com/" class="external-link">GitHub</a>, <a href="https://bitbucket.org/" class="external-link">BitBucket</a>, <a href="https://gitlab.com/" class="external-link">GitLab</a> or another Git host server after this lesson will include this information.</p>
-<p>For this lesson, we will be interacting with <a href="https://github.com/" class="external-link">GitHub</a> and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private][git-privacy].</p>
+<p>For this lesson, we will be interacting with <a href="https://github.com/" class="external-link">GitHub</a> and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review <a href="https://help.github.com/articles/keeping-your-email-address-private/" class="external-link">GitHub’s instructions for keeping your email address private</a>.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -353,7 +353,7 @@
 <h3 class="callout-title">Line Endings<a class="anchor" aria-label="anchor" href="#line-endings"></a>
 </h3>
 <div class="callout-content">
-<p>As with other keys, when you hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd> on your keyboard, your computer encodes this input as a character. Different operating systems use different character(s) to represent the end of a line. (You may also hear these referred to as newlines or line breaks.) Because Git uses these characters to compare files, it may cause unexpected issues when editing a file on different machines. Though it is beyond the scope of this lesson, you can read more about this issue <a href="https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf" class="external-link">in the Pro Git book</a>.</p>
+<p>As with other keys, when you hit <kbd>Enter</kbd> or <kbd>↵</kbd> (WindowsOS) or <kbd>Return</kbd> (MacOS) on your keyboard, your computer encodes this input as a character. Different operating systems use different character(s) to represent the end of a line - you may also hear these referred to as newlines or line breaks. Because Git uses these characters to compare files, it may cause unexpected issues when editing a file on different machines. Though it is beyond the scope of this lesson, you can read more about this issue <a href="https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf" class="external-link">in the Pro Git book</a>.</p>
 <p>You can change the way Git recognizes and encodes line endings using the <code>core.autocrlf</code> command to <code>git config</code>. The following settings are recommended:</p>
 </div>
 </div>
@@ -402,46 +402,65 @@
 <h3 class="callout-title">Text editors<a class="anchor" aria-label="anchor" href="#text-editors"></a>
 </h3>
 <div class="callout-content">
-<p>Dracula also has to set his favorite text editor, following this table:</p>
+<p>For today we will all use the same editor (<code>nano</code>), so enter the following into the command line:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> core.editor <span class="st">"nano -w"</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  More options
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>If you want to change the default editor after today’s session, the table below will help.</p>
 <table class="table"><colgroup><col width="28%"><col width="71%"></colgroup><thead><tr class="header"><th align="left">Editor</th>
 <th align="left">Configuration command</th>
 </tr></thead><tbody><tr class="odd"><td align="left">Atom</td>
-<td align="left"><code>$ git config --global core.editor "atom --wait"</code></td>
+<td align="left"><code>git config --global core.editor "atom --wait"</code></td>
 </tr><tr class="even"><td align="left">nano</td>
-<td align="left"><code>$ git config --global core.editor "nano -w"</code></td>
+<td align="left"><code>git config --global core.editor "nano -w"</code></td>
 </tr><tr class="odd"><td align="left">BBEdit (Mac, with command line tools)</td>
-<td align="left"><code>$ git config --global core.editor "bbedit -w"</code></td>
+<td align="left"><code>git config --global core.editor "bbedit -w"</code></td>
 </tr><tr class="even"><td align="left">Sublime Text (Mac)</td>
-<td align="left"><code>$ git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w"</code></td>
+<td align="left"><code>git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w"</code></td>
 </tr><tr class="odd"><td align="left">Sublime Text (Win, 32-bit install)</td>
-<td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"</code></td>
+<td align="left"><code>git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"</code></td>
 </tr><tr class="even"><td align="left">Sublime Text (Win, 64-bit install)</td>
-<td align="left"><code>$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"</code></td>
+<td align="left"><code>git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"</code></td>
 </tr><tr class="odd"><td align="left">Notepad (Win)</td>
-<td align="left"><code>$ git config --global core.editor "c:/Windows/System32/notepad.exe"</code></td>
+<td align="left"><code>git config --global core.editor "c:/Windows/System32/notepad.exe"</code></td>
 </tr><tr class="even"><td align="left">Notepad++ (Win, 32-bit install)</td>
-<td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
+<td align="left"><code>git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
 </tr><tr class="odd"><td align="left">Notepad++ (Win, 64-bit install)</td>
-<td align="left"><code>$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
+<td align="left"><code>git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
 </tr><tr class="even"><td align="left">Kate (Linux)</td>
-<td align="left"><code>$ git config --global core.editor "kate"</code></td>
+<td align="left"><code>git config --global core.editor "kate"</code></td>
 </tr><tr class="odd"><td align="left">Gedit (Linux)</td>
-<td align="left"><code>$ git config --global core.editor "gedit --wait --new-window"</code></td>
+<td align="left"><code>git config --global core.editor "gedit --wait --new-window"</code></td>
 </tr><tr class="even"><td align="left">Scratch (Linux)</td>
-<td align="left"><code>$ git config --global core.editor "scratch-text-editor"</code></td>
+<td align="left"><code>git config --global core.editor "scratch-text-editor"</code></td>
 </tr><tr class="odd"><td align="left">Emacs</td>
-<td align="left"><code>$ git config --global core.editor "emacs"</code></td>
+<td align="left"><code>git config --global core.editor "emacs"</code></td>
 </tr><tr class="even"><td align="left">Vim</td>
-<td align="left"><code>$ git config --global core.editor "vim"</code></td>
+<td align="left"><code>git config --global core.editor "vim"</code></td>
 </tr><tr class="odd"><td align="left">VS Code</td>
-<td align="left"><code>$ git config --global core.editor "code --wait"</code></td>
+<td align="left"><code>git config --global core.editor "code --wait"</code></td>
 </tr></tbody></table><p>It is possible to reconfigure the text editor for Git whenever you want to change it.</p>
 </div>
 </div>
 </div>
-<div id="discussion3" class="callout discussion">
+</div>
+<div id="callout2" class="callout callout">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="exiting-text-editors" class="callout-inner">
 <h3 class="callout-title">Exiting text editors<a class="anchor" aria-label="anchor" href="#exiting-text-editors"></a>
@@ -454,33 +473,35 @@
 </div>
 </section><section id="default-branch"><h2 class="section-heading">Default branch<a class="anchor" aria-label="anchor" href="#default-branch"></a>
 </h2>
-<hr class="half-width"><p>Git (2.28+) allows configuration of the name of the branch created when you initialize any new repository. Dracula decides to use that feature to set it to main so it matches the cloud service he will eventually use.</p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code></pre>
-</div>
-<blockquote>
-<p>You can change your configuration as many times as you want: use the same commands to choose another editor or update your email address.</p>
-</blockquote>
-<div id="discussion4" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="check-configuration" class="callout-inner">
-<h3 class="callout-title">Check configuration<a class="anchor" aria-label="anchor" href="#check-configuration"></a>
-</h3>
-<div class="callout-content">
-<p>We can check it worked by typing the following in the command line. Your username and email should appear in the output.</p>
+<hr class="half-width"><p>Git (2.28+) allows configuration of the name of the branch created when you initialize any new repository. Dracula decides to use that feature to set it to <code>main</code> so it matches the cloud service he will eventually use.</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--list</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code></pre>
+</div>
+<div id="callout3" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+</h3>
+<div class="callout-content">
+<p>Source file changes are associated with a “branch.” For new learners in this lesson, it’s enough to know that branches exist, and this lesson uses one branch. By default, Git will create a branch called <code>master</code> when you create a new repository with <code>git init</code> (as explained in the next Episode). This term evokes the racist practice of human slavery and the <a href="https://github.com/github/renaming" class="external-link">software development community</a> has moved to adopt more inclusive language.</p>
+<p>In 2020, most Git code hosting services transitioned to using <code>main</code> as the default branch. As an example, any new repository that is opened in GitHub and GitLab default to <code>main</code>. However, Git has not yet made the same change. As a result, local repositories must be manually configured have the same <code>main</code> branch name as most cloud services.</p>
+<p>For versions of Git prior to 2.28, the change can be made on an individual repository level. The command for this is in the next episode. Note that if this value is unset in your local Git configuration, the <code>init.defaultBranch</code> value defaults to <code>master</code>.</p>
 </div>
 </div>
 </div>
+<p>The five commands we just ran above only need to be run once: the flag <code>--global</code> tells Git to use the settings for every project, in your user account, on this computer.</p>
+<p>You can check your settings at any time:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--list</span></span></code></pre>
 </div>
-<div id="discussion5" class="callout discussion">
+<p>You can change your configuration as many times as you want: use the same commands to choose another editor or update your email address.</p>
+<div id="discussion3" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -489,23 +510,23 @@
 </h3>
 <div class="callout-content">
 <p>Always remember that if you forget the subcommands or options of a <code>git</code> command, you can access the relevant list of options typing <code>git &lt;command&gt; -h</code> or access the corresponding Git manual by typing <code>git &lt;command&gt; --help</code>, e.g.:</p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">-h</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--help</span></span></code></pre>
-</div>
-<p>While viewing the manual, remember the <code>:</code> is a prompt waiting for commands and you can press <kbd>Q</kbd> to exit the manual.</p>
-<p>More generally, you can get the list of available <code>git</code> commands and further resources of the Git manual typing:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> help</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">-h</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--help</span></span></code></pre>
+</div>
+<p>While viewing the manual, remember the <code>:</code> is a prompt waiting for commands and you can press <kbd>Q</kbd> to exit the manual.</p>
+<p>More generally, you can get the list of available <code>git</code> commands and further resources of the Git manual typing:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> help</span></code></pre>
 </div>
 </div>
 </div>
 </div>
-<div id="callout2" class="callout callout">
+<div id="callout4" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -583,8 +604,8 @@ any links that you are not going to use.
   "url": "https://siobhon-egan.github.io/git-command-line/instructor/02-setup.html",
   "identifier": "https://siobhon-egan.github.io/git-command-line/instructor/02-setup.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-08-31",
-  "datePublished": "2022-08-31"
+  "dateModified": "2022-09-05",
+  "datePublished": "2022-09-05"
 }
 
   </script><script>

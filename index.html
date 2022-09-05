@@ -204,7 +204,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-wrap-up.html">8. Wrap-up</a>
+        <a href="08-wrapup.html">8. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -260,47 +260,56 @@
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
 
-<blockquote>
-<p><strong>Git version control using the command line</strong></p>
-</blockquote>
 <p>The content here been reproduced and slightly modified from the software carpentry lesson <a href="https://swcarpentry.github.io/git-novice/index.html" class="external-link"><strong>Version Control with Git</strong></a>.</p>
-<p>This workshop is intended for users with no experience with git. While there are various options for using git the content here uses the command line and GitHub.</p>
-<p>There are no pre-requests for the workshop, however any previous knowledge of the command line (bash/shell) will be helpful.</p>
-<p>It is designed to be delivered as an interactive workshop and take approx. <em>1 hour and 30 minutes</em>.</p>
+<div class="section level3">
+<h3 id="target-audience">Target audience<a class="anchor" aria-label="anchor" href="#target-audience"></a></h3>
+<p>This workshop is intended for users with no experience with git. While there are various options for using git the content here uses the command line and GitHub. There is no assumed knowledge for the workshop, however any familiarity with command line (bash/shell) will be helpful. Examples of audience members for this workshop are available at the <a href="profiles.html">learner profiles</a> pages.</p>
+</div>
+<div class="section level3">
+<h3 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h3>
+<p>The goal of this session is for learners to become familiar with git, have the confidence to use it in their study/work, and to have the knowledge to know what questions to ask when they get stuck. This workshop is designed to provide a practical and ‘hands-on’ introduction to git. It does not cover all aspects of version control/git theory.</p>
+</div>
 <div class="section level3">
 <h3 id="schedule">Schedule<a class="anchor" aria-label="anchor" href="#schedule"></a></h3>
+<p>It is designed to be delivered as an interactive workshop and take approx. <em>1 hour and 30 minutes</em>.</p>
 <!--
-| Time               | Contents                                         |
-|:-------------------|:-------------------------------------------------|
-| 5 minutes          | Why git?                                         |
-| 5 minutes          | Setting up git                                   |
-| 10 minutes         | Creating a repository                            |
-| 15 minutes         | Tracking changes                                 |
-| 15 minutes         | Exploring history                                |
-| 5 minutes          | Ignoring things                                  |
-| 30 minutes         | Remotes                                          |
-| 5 minutes          | Wrap up                                          |
+| Time       | Contents              |
+|-----------:|:----------------------|
+| 5 minutes  | Why git?              |
+| 5 minutes  | Setting up git        |
+| 10 minutes | Creating a repository |
+| 15 minutes | Tracking changes      |
+| 15 minutes | Exploring history     |
+| 5 minutes  | Ignoring things       |
+| 30 minutes | Remotes               |
+| 5 minutes  | Wrap up               |
 -->
-<ul><li>Why git? (<em>5 minutes</em>)</li>
-<li>Setting up git (<em>5 minutes</em>)</li>
-<li>Creating a repository (<em>10 minutes</em>)</li>
-<li>Tracking changes (<em>15 minutes</em>)</li>
-<li>Exploring history (<em>15 minutes</em>
+<ul><li>
+<a href="01-basics.html">Why git?</a> (<em>5 minutes</em>)</li>
+<li>
+<a href="02-setup.html">Setting up git</a> (<em>5 minutes</em>)</li>
+<li>
+<a href="03-create.html">Creating a repository</a> (<em>10 minutes</em>)</li>
+<li>
+<a href="04-changes.html">Tracking changes</a> (<em>15 minutes</em>)</li>
+<li>
+<a href="05-history.html">Exploring history</a> (<em>15 minutes</em>
 </li>
-<li>Ignoring things (<em>5 minutes</em>)</li>
-<li>Remotes (<em>30 minutes</em>)</li>
-<li>Wrap up (<em>5 minutes</em>)</li>
-</ul><p>To participate in this workshop, you will need access to software as described below. In addition, you will need an up-to-date web browser.</p>
-<div id="prereq1" class="callout prereq">
+<li>
+<a href="06-ignore.html">Ignoring things</a> (<em>5 minutes</em>)</li>
+<li>
+<a href="07-remotes.html">Remotes</a> (<em>30 minutes</em>)</li>
+<li>
+<a href="08-wrapup.html">Wrap up</a> (<em>5 minutes</em>)</li>
+</ul><div id="prereq1" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
 </div>
-<div id="format" class="callout-inner">
-<h3 class="callout-title">Format<a class="anchor" aria-label="anchor" href="#format"></a>
+<div id="requirements" class="callout-inner">
+<h3 class="callout-title">Requirements<a class="anchor" aria-label="anchor" href="#requirements"></a>
 </h3>
 <div class="callout-content">
-<p>The goal of this session is for learners to become familiar with git and have the confidence to use it in their study/work, and to have the knowledge to know what questions to ask when they get stuck.</p>
-<p>This workshop is designed to provide a practical and ‘hands-on’ introduction to git. It does not cover all aspects of version control/git theory.</p>
+<p>To participate in this workshop, participants must bring their own laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. You will need access to software as described below. In addition, you will need an up-to-date web browser.</p>
 </div>
 </div>
 </div>
@@ -336,7 +345,7 @@ any links that you are not going to use.
   Windows
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Computers with Windows operating systems do not automatically have a Unix Shell program installed. In this lesson, we encourage you to use an emulator included in <a href="https://carpentries.github.io/workshop-template/#shell" class="external-link">Git for Windows</a>, which gives you access to both Bash shell commands and Git.</p>
 <ul><li>
@@ -381,7 +390,7 @@ any links that you are not going to use.
   MacOS
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>For a Mac computer running macOS Mojave or earlier releases, the default Unix Shell is Bash. For a Mac computer running macOS Catalina or later releases, the default Unix Shell is Zsh. Your default shell is available via the Terminal program within your <code>/Applications/Utilities</code> folder.</p>
 <p>To open Terminal, try one or both of the following:</p>
@@ -403,7 +412,7 @@ any links that you are not going to use.
   Linux
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The default shell is usually Bash and there is usually no need to install anything.</p>
 <p>To see if your default shell is Bash type <code>echo $SHELL</code> in a terminal and press the <kbd>Enter</kbd> key. If the message printed does not end with ‘/bash’ then your default is something else and you can run Bash by typing <code>bash</code>.</p>
@@ -434,7 +443,7 @@ any links that you are not going to use.
   Windows
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Git should be installed on your computer as part of your Bash install (see the <a href="https://carpentries.github.io/workshop-template/#shell" class="external-link">Shell installation instructions</a>).</p>
 <p>You can check by opening the program <strong>Git Bash</strong> and entering <code>git</code>.</p>
@@ -456,7 +465,7 @@ operable program or batch file.</code></pre>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p><strong>For macOS</strong>, install Git for Mac by downloading and running the most recent “mavericks” installer from <a href="http://sourceforge.net/projects/git-osx-installer/files/" class="external-link">this list</a>. Because this installer is not signed by the developer, you may have to right click (control click) on the .pkg file, click Open, and click Open on the pop up window. After installing Git, there will not be anything in your <code>/Applications</code> folder, as Git is a command line program. <strong>For older versions of OS X (10.5-10.8)</strong> use the most recent available installer labelled “snow-leopard” <a href="http://sourceforge.net/projects/git-osx-installer/files/" class="external-link">available here</a>.</p>
 <p>You can check your version of git by opening <strong>Terminal</strong> and entering <code>git --version</code>.</p>
@@ -477,7 +486,7 @@ operable program or batch file.</code></pre>
   Linux
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>If Git is not already available on your machine you can try to install it via your distro’s package manager. For Debian/Ubuntu run <code>sudo apt-get install git</code> and for Fedora run <code>sudo dnf install git</code>.</p>
 </div>
@@ -495,7 +504,9 @@ operable program or batch file.</code></pre>
 <h3 class="callout-title">Details<a class="anchor" aria-label="anchor" href="#details-2"></a>
 </h3>
 <div class="callout-content">
-<p>When you’re writing code, it’s nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words. The default text editor on macOS and Linux is usually set to <em>Vim</em>, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case ‘q’, exclamation mark), then hitting <kbd>Return</kbd> to return to the shell. To exit <em>nano</em> text editor (which is recommended during later lessons) press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.</p>
+<p>When you’re writing code, it’s nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words.</p>
+<p><em><strong>Exiting common text editors</strong></em></p>
+<p>The default text editor on macOS and Linux is usually set to <strong>Vim</strong>, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case ‘q’, exclamation mark), then hitting <kbd>Return</kbd> to return to the shell. To exit <strong>nano</strong> text editor (which is recommended during later lessons) press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.</p>
 </div>
 </div>
 </div>
@@ -506,7 +517,7 @@ operable program or batch file.</code></pre>
   Windows
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>nano is a basic editor and the default that instructors use in the workshop. It is installed along with Git.</p>
 </div>
@@ -520,7 +531,7 @@ operable program or batch file.</code></pre>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <p>nano is a basic editor and the default that instructors use in the workshop. See the Git installation video tutorial for an example on how to open nano. It should be pre-installed.</p>
 <p><a href="https://youtu.be/9LQhwETCdwY" class="external-link">Check out video tutorial here</a></p>
@@ -535,7 +546,7 @@ operable program or batch file.</code></pre>
   Linux
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <p>nano is a basic editor and the default that instructors use in the workshop. It should be pre-installed.</p>
 </div>
@@ -593,8 +604,8 @@ any links that you are not going to use.
   "url": "https://siobhon-egan.github.io/git-command-line/index.html",
   "identifier": "https://siobhon-egan.github.io/git-command-line/index.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-08-31",
-  "datePublished": "2022-08-31"
+  "dateModified": "2022-09-05",
+  "datePublished": "2022-09-05"
 }
 
   </script><script>

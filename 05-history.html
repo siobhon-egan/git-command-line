@@ -204,7 +204,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-wrap-up.html">8. Wrap-up</a>
+        <a href="08-wrapup.html">8. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -261,7 +261,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Exploring History</h1>
-        <p> Last updated on 2022-08-31 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/05-history.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-09-05 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/05-history.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -544,7 +544,7 @@ Both 2 and 4</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The answer is <em>Option 5</em> (both 2 and 4).</p>
 <p>The <code>checkout</code> command restores files from the repository, overwriting the files in your working directory. Option 2 and 4 both restore the <em>latest</em> version <em>in the repository</em> of the file <code>data_cruncher.py</code>. Option 2 uses <code>HEAD</code> to indicate the <em>latest</em>, whereas option 4 uses the unique ID of the last commit, which is what <code>HEAD</code> means.</p>
@@ -580,7 +580,7 @@ Both 2 and 4</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>The command <code>git log</code> lists project history with commit IDs.</p>
 <p>The command <code>git show HEAD</code> shows changes made at the latest commit, and lists the commit ID; however, Jennifer should double-check it is the correct commit, and no one else has committed changes to the repository.</p>
@@ -622,7 +622,7 @@ Both 2 and 4</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The answer is option 2.</p>
 <p>The command <code>git add venus.txt</code> places the current version of <code>venus.txt</code> into the staging area. The changes to the file from the second <code>echo</code> command are only applied to the working copy, not the version in the staging area.</p>
@@ -642,19 +642,6 @@ Both 2 and 4</p>
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="checking-understanding-of-git-diff" class="callout-inner">
-<h3 class="callout-title">Checking Understanding of <code>git diff</code><a class="anchor" aria-label="anchor" href="#checking-understanding-of-git-diff"></a>
-</h3>
-<div class="callout-content">
-<p>Consider this command: <code>git diff HEAD~9 mars.txt</code>. What do you predict this command will do if you execute it? What happens when you do execute it? Why?</p>
-<p>Try another command, <code>git diff [ID] mars.txt</code>, where [ID] is replaced with the unique identifier for your most recent commit. What do you think will happen, and what does happen?</p>
-</div>
-</div>
-</div>
-<div id="discussion5" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
 <div id="getting-rid-of-staged-changes" class="callout-inner">
 <h3 class="callout-title">Getting Rid of Staged Changes<a class="anchor" aria-label="anchor" href="#getting-rid-of-staged-changes"></a>
 </h3>
@@ -663,7 +650,7 @@ Both 2 and 4</p>
 </div>
 </div>
 </div>
-<div id="discussion6" class="callout discussion">
+<div id="discussion5" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -765,8 +752,8 @@ any links that you are not going to use.
   "url": "https://siobhon-egan.github.io/git-command-line/05-history.html",
   "identifier": "https://siobhon-egan.github.io/git-command-line/05-history.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-08-31",
-  "datePublished": "2022-08-31"
+  "dateModified": "2022-09-05",
+  "datePublished": "2022-09-05"
 }
 
   </script><script>

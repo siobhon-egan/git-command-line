@@ -213,7 +213,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-wrap-up.html">8. Wrap-up</a>
+        <a href="08-wrapup.html">8. Wrap-up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -261,16 +261,16 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/06-ignore.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/08-wrap-up.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/08-wrapup.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="../instructor/06-ignore.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Ignoring Things</a>
-        <a class="chapter-link float-end" href="../instructor/08-wrap-up.html" rel="next">Next: Wrap-up... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/08-wrapup.html" rel="next">Next: Wrap-up... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Remotes in GitHub</h1>
-        <p> Last updated on 2022-08-31 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/07-remotes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-09-05 | <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/07-remotes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         <div class="text-end">
@@ -302,12 +302,12 @@
 </div>
 </div>
 <p>Version control really comes into its own when we begin to collaborate with other people. We already have most of the machinery we need to do this; the only thing missing is to copy changes from one repository to another.</p>
-<p>Systems like Git allow us to move work between any two repositories. In practice, though, it’s easiest to use one copy as a central hub, and to keep it on the web rather than on someone’s laptop. Most programmers use hosting services like <a href="https://github.com" class="external-link">GitHub</a>, <a href="https://bitbucket.org" class="external-link">Bitbucket</a> or <a href="https://gitlab.com/" class="external-link">GitLab</a> to hold those main copies; we’ll explore the pros and cons of this in a later episode.</p>
+<p>Systems like Git allow us to move work between any two repositories. In practice, though, it’s easiest to use one copy as a central hub, and to keep it on the web rather than on someone’s laptop. Most programmers use hosting services like <a href="https://github.com/" class="external-link">GitHub</a>, <a href="https://bitbucket.org/" class="external-link">Bitbucket</a> or <a href="https://gitlab.com/" class="external-link">GitLab</a> to hold those main copies; we’ll explore the pros and cons of this in a later episode.</p>
 <p>Let’s start by sharing the changes we’ve made to our current project with the world. To this end we are going to create a <em>remote</em> repository that will be linked to our <em>local</em> repository.</p>
 <section id="create-a-remote-repository"><h2 class="section-heading">1. Create a remote repository<a class="anchor" aria-label="anchor" href="#create-a-remote-repository"></a>
 </h2>
-<hr class="half-width"><p>Log in to <a href="https://github.com" class="external-link">GitHub</a>, then click on the icon in the top right corner to create a new repository called <code>planets</code>:</p>
-<figure><img src="../fig/github-create-repo-01.png" class="figure mx-auto d-block"></figure><p>Name your repository “planets” and then click “Create Repository”.</p>
+<hr class="half-width"><p>Log in to <a href="https://github.com/" class="external-link">GitHub</a>, then click on the icon in the top right corner to create a new repository.</p>
+<figure><img src="../fig/github-create-repo-01.png" class="figure mx-auto d-block"></figure><p>Name your repository <code>planets</code> and then click “Create Repository”.</p>
 <p><strong>Note</strong>: Since this repository will be connected to a local repository, it needs to be empty. Leave “Initialize this repository with a README” <strong>unchecked</strong>, and keep “None” as options for both “Add .gitignore” and “Add a license.” See the “GitHub License and README files” exercise below for a full explanation of why the repository needs to be empty.</p>
 <figure><img src="../fig/github-create-repo-02.png" style="width:75.0%" class="figure mx-auto d-block"></figure><p>As soon as the repository is created, GitHub displays a page with a URL and some information on how to configure your local repository:</p>
 <figure><img src="../fig/github-create-repo-03.png" class="figure mx-auto d-block"></figure><p>This effectively does the following on GitHub’s servers:</p>
@@ -350,13 +350,13 @@
 <p><span class="emoji" data-emoji="link">🔗</span> <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" class="external-link">Offical GitHub documentation</a></p>
 <p>Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.</p>
 <ol style="list-style-type: decimal"><li>Verify your email address, if it hasn’t been verified yet.</li>
-<li>In the upper-right corner of any page, click your profile photo, then click Settings.</li>
-</ol><ul><figure><img src="../fig/github-PAT-01.png" style="width:30.0%" class="figure mx-auto d-block"></figure></ul><ol start="3" style="list-style-type: decimal"><li>In the left sidebar, click Developer settings.</li>
-</ol><ul><figure><img src="../fig/github-PAT-02.png" style="width:40.0%" class="figure mx-auto d-block"></figure></ul><ol start="4" style="list-style-type: decimal"><li>In the left sidebar, click Personal access tokens.</li>
-</ol><ul><figure><img src="../fig/github-PAT-03.png" style="width:40.0%" class="figure mx-auto d-block"></figure></ul><ol start="5" style="list-style-type: decimal"><li>Click Generate new token.</li>
-<li>Give your token a descriptive name.</li>
-<li>To give your token an expiration, select the Expiration drop-down menu, then click a default or use the calendar picker.</li>
-</ol><ul><figure><img src="../fig/github-PAT-04.png" class="figure mx-auto d-block"></figure><figure><img src="../fig/github-PAT-05.png" class="figure mx-auto d-block"></figure></ul><ol start="8" style="list-style-type: decimal"><li>Select the scopes, or permissions, you’d like to grant this token. To use your token to access repositories from the command line, select repo.</li>
+<li>In the upper-right corner of any page, click your profile photo, then select “Settings”.</li>
+</ol><ul><figure><img src="../fig/github-PAT-01.png" style="width:20.0%" class="figure mx-auto d-block"></figure></ul><ol start="3" style="list-style-type: decimal"><li>In the left sidebar, select “Developer settings” (at the bottom of the list.</li>
+</ol><ul><figure><img src="../fig/github-PAT-02.png" style="width:20.0%" class="figure mx-auto d-block"></figure></ul><ol start="4" style="list-style-type: decimal"><li>In the left sidebar, select “Personal access tokens”.</li>
+</ol><ul><figure><img src="../fig/github-PAT-03.png" style="width:20.0%" class="figure mx-auto d-block"></figure></ul><ol start="5" style="list-style-type: decimal"><li>select “Generate new token”.</li>
+</ol><ul><figure><img src="../fig/github-PAT-04.png" class="figure mx-auto d-block"></figure></ul><ol start="6" style="list-style-type: decimal"><li>Give your token a name - e.g. I used “uni-macbook” in this example.</li>
+<li>You need to provide an expiration for the token. It’s a personal choice but I suggest selecting something &gt; 1 month. You may want to re-visit this tutorial in 2 weeks time for example and it will help you if your token is still valid. I suggest you select the Expiration drop-down menu and choose “custom”, then click a default or use the calendar picker (In the example below I selected end of the year 2022 for expiry)</li>
+</ol><ul><figure><img src="../fig/github-PAT-05.png" class="figure mx-auto d-block"></figure><figure><img src="../fig/github-PAT-06.png" class="figure mx-auto d-block"></figure></ul><ol start="8" style="list-style-type: decimal"><li>Select the scopes, or permissions, you’d like to grant this token. To use your token to access repositories from the command line, select repo.</li>
 </ol><ul><li>
 <p><em>Suggested options for selection</em>:</p>
 <ul><li>
@@ -382,15 +382,17 @@
 </li>
 </ul></li>
 </ul><ol start="9" style="list-style-type: decimal"><li>Click Generate token.</li>
-</ol><ul><figure><img src="../fig/github-PAT-06.png" class="figure mx-auto d-block"></figure></ul><div id="callout2" class="callout callout">
+</ol><ul><figure><img src="../fig/github-PAT-07.png" class="figure mx-auto d-block"></figure></ul><div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="warning" class="callout-inner">
-<h3 class="callout-title">Warning<a class="anchor" aria-label="anchor" href="#warning"></a>
+<h3 class="callout-title">
+<span class="emoji" data-emoji="exclamation">❗</span> Warning<a class="anchor" aria-label="anchor" href="#warning"></a>
 </h3>
 <div class="callout-content">
-<p><em>Immediately copy and paste this token into a text document so we can use it in the next step.</em> Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.</p>
+<p><strong>Immediately copy and paste this token into a text document so we can use it in the next step.</strong><br>
+Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.</p>
 </div>
 </div>
 </div>
@@ -401,13 +403,13 @@
 <hr class="half-width"><p>Now we connect the two repositories.<br>
 We do this by making the GitHub repository a remote for the local repository. The home page of the repository on GitHub includes the URL string we need to identify it:</p>
 <figure><img src="../fig/github-find-repo-string.png" alt="" class="figure mx-auto d-block"><figcaption>Where to Find Repository URL on GitHub</figcaption></figure><blockquote>
-<p>Make sure you copy the HTTPS URL for cloining</p>
+<p>Make sure you copy the <strong>HTTPS</strong> URL for cloining</p>
 </blockquote>
 <p>Copy that URL from the browser, go into the local <code>planets</code> repository, and run this command:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/siobhon-egan/planets.git</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/vlad/planets.git</span></code></pre>
 </div>
 <p>Make sure to use the URL for your repository rather than Vlad’s: the only difference should be your username instead of <code>vlad</code>.</p>
 <p><code>origin</code> is a local name used to refer to the remote repository. It could be called anything, but <code>origin</code> is a convention that is often used by default in git and GitHub, so it’s helpful to stick with this unless there’s a reason not to.</p>
@@ -423,26 +425,100 @@ We do this by making the GitHub repository a remote for the local repository. Th
 <pre class="output" tabindex="0"><code>origin   https://github.com/vlad/planets.git (fetch)
 origin   https://github.com/vlad/planets.git (push)</code></pre>
 </div>
-<div id="callout3" class="callout callout">
+<div id="discussion1" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="using-a-token-on-the-command-line" class="callout-inner">
-<h3 class="callout-title">Using a token on the command line<a class="anchor" aria-label="anchor" href="#using-a-token-on-the-command-line"></a>
+<div id="securly-storing-your-personal-access-token" class="callout-inner">
+<h3 class="callout-title">Securly Storing Your Personal Access Token<a class="anchor" aria-label="anchor" href="#securly-storing-your-personal-access-token"></a>
 </h3>
 <div class="callout-content">
-<p>If you are not prompted for your username and password, your credentials may be cached on your computer. You can update your credentials in the Keychain to replace your old password with the token.</p>
-<p>Instead of manually entering your PAT for every HTTPS Git operation, you can cache your PAT with a Git client. Git will temporarily store your credentials in memory until an expiry interval has passed. You can also store the token in a plain text file that Git can read before every request. For more information, see “<a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">Caching your GitHub credentials in Git</a>.”</p>
+<p>As a PAT is used in place of your password by default it will need to be re-entered whenever you push to the remote GitHub repository. It is recommended you use a password manager to store these credentials.</p>
+<p>When your PAT expires you will need to ensure you update these saved credentials.</p>
+<p>If you are not prompted for your username and password, your credentials may be cached on your computer. You should update your credentials to replace your old password with the token.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  MacOS
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>When you first push to the GitHub repository, you will be asked for a username and password. Provide your GitHub account username as the username and the PAT as the password. Once Git has successfully connected with the remote repository, the PAT will be automatically added to the Mac Keychain Access app. After this, there is no need to re-enter the PAT for future clone, push or pull actions.</p>
+<p>If you need to update the credentials stored in the Mac Keychain Access app, these <a href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain" class="external-link">instructions</a> are useful.</p>
+<p>Alternatively you can use <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">GitHub CLI or Git Credential Manager (GCM) to remember your credentials</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Windows
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>For Windows, the recommended option is to use the Git Credential Manager (GCM), which is included with GitBash (Git for Windows).</p>
+<figure><img src="../fig/git-for-windows-CM.jpeg" class="figure mx-auto d-block"></figure><p>When you first push to a public GitHub repository, or clone a private GitHub repository, you will be prompted by the below window. Choose to login via “Token”, and enter your PAT.</p>
+<figure><img src="../fig/token-gitforwindows.jpeg" class="figure mx-auto d-block"></figure><p>The GCM via GitBash automatically stores the entered PAT. In future cloning, pushing, or pulling the PAT will be automatically retrieved using the GCM.</p>
+<p>Here you can find additional <a href="https://github.com/GitCredentialManager/git-credential-manager" class="external-link">Instructions for GCM</a> from the official GitHub Repository.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Linux (Ubuntu)
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>Linux (Ubuntu) users are recommended to use the GitHub Command Line Interface (GitHub CLI).</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-fsSL</span> https://cli.github.com/packages/githubcli-archive-keyring.gpg <span class="kw">|</span> <span class="fu">sudo</span> dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"deb [arch=</span><span class="va">$(</span><span class="ex">dpkg</span> <span class="at">--print-architecture</span><span class="va">)</span><span class="st"> signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main"</span> <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/apt/sources.list.d/github-cli.list <span class="op">&gt;</span> /dev/null</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install gh</span></code></pre>
+</div>
+<p>Enter ‘gh auth login’ and follow the prompts. When prompted for your preferred protocol for Git operations, select HTTPS and, when asked if you would like to authenticate to Git with your GitHub credentials, enter Y.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Alternative
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<p>Alternatively you can use <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">GitHub CLI or Git Credential Manager (GCM) to remember your credentials</a>.</p>
+</div>
 </div>
 </div>
 </div>
 </section><section id="push-local-changes-to-a-remote"><h2 class="section-heading">4. Push local changes to a remote<a class="anchor" aria-label="anchor" href="#push-local-changes-to-a-remote"></a>
 </h2>
 <hr class="half-width"><p>Now that authentication is setup, we can return to the remote. This command will push the changes from our local repository to the repository on GitHub:</p>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -457,7 +533,7 @@ remote: Resolving deltas: 100% (2/2), done.
 To https://github.com/vlad/planets.git
  * [new branch]      main -&gt; main</code></pre>
 </div>
-<div id="discussion1" class="callout discussion">
+<div id="discussion2" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -475,20 +551,20 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
 </div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>To fix this first we need to change to the main branch this you will will need to change</p>
-<div class="codewrapper sourceCode" id="cb8">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -496,17 +572,17 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
 <pre class="output" tabindex="0"><code>Switched to a new branch 'main'</code></pre>
 </div>
 <p>Then try to push again and it should work</p>
-<div class="codewrapper sourceCode" id="cb10">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 <p>Our local and remote repositories are now in this state:</p>
-<figure><img src="../fig/github-repo-after-first-push.svg" alt="" class="figure mx-auto d-block"><figcaption>GitHub Repository After First Push</figcaption></figure><div id="callout4" class="callout callout">
+<figure><img src="../fig/github-repo-after-first-push.svg" alt="" class="figure mx-auto d-block"><figcaption>GitHub Repository After First Push</figcaption></figure><div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -519,10 +595,10 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
 </div>
 </div>
 <p>We can pull changes from the remote repository to the local one as well:</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -532,7 +608,7 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
 Already up-to-date.</code></pre>
 </div>
 <p>Pulling has no effect in this case because the two repositories are already synchronized. If someone else had pushed some changes to the repository on GitHub, though, this command would download them to our local repository.</p>
-<div id="discussion2" class="callout discussion">
+<div id="discussion3" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -544,14 +620,14 @@ Already up-to-date.</code></pre>
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the full identifier of the commit to the clipboard. In the shell, <code>git log</code> will show you the full commit identifier for each commit.</p>
 <p>When you click on the middle button, you’ll see all of the changes that were made in that particular commit. Green shaded lines indicate additions and red ones removals. In the shell we can do the same thing with <code>git diff</code>. In particular, <code>git diff ID1..ID2</code> where ID1 and ID2 are commit identifiers (e.g. <code>git diff a3bf1e5..041e637</code>) will show the differences between those two commits.</p>
@@ -560,7 +636,7 @@ Already up-to-date.</code></pre>
 </div>
 </div>
 </div>
-<div id="callout5" class="callout callout">
+<div id="callout4" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -572,7 +648,7 @@ Already up-to-date.</code></pre>
 </div>
 </div>
 </div>
-<div id="discussion3" class="callout discussion">
+<div id="discussion4" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -584,21 +660,21 @@ Already up-to-date.</code></pre>
 </div>
 </div>
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over the timestamp, you can see the exact time at which the last change to the file occurred.</p>
 </div>
 </div>
 </div>
 </div>
-<div id="discussion4" class="callout discussion">
+<div id="discussion5" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -610,21 +686,21 @@ Already up-to-date.</code></pre>
 </div>
 </div>
 </div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
+  <h4 class="accordion-header" id="headingSolution8">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.</p>
 </div>
 </div>
 </div>
 </div>
-<div id="discussion5" class="callout discussion">
+<div id="discussion6" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -636,20 +712,20 @@ Already up-to-date.</code></pre>
 </div>
 </div>
 </div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
+  <h4 class="accordion-header" id="headingSolution9">
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories. When GitHub creates a README.md file, it performs a commit in the remote repository. When you try to pull the remote repository to your local repository, Git detects that they have histories that do not share a common origin and refuses to merge.</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -665,10 +741,10 @@ From https://github.com/vlad/planets
 fatal: refusing to merge unrelated histories</code></pre>
 </div>
 <p>You can force git to merge the two repositories with the option <code>--allow-unrelated-histories</code>. Be careful when you use this option and carefully examine the contents of local and remote repositories before merging.</p>
-<div class="codewrapper sourceCode" id="cb15">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--allow-unrelated-histories</span> origin main</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--allow-unrelated-histories</span> origin main</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -684,19 +760,14 @@ create mode 100644 README.md</code></pre>
 </div>
 </div>
 </div>
-<div id="callout6" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<div class="alert alert-success">
+<p><strong>🖌 Collaborators!</strong></p>
+<p>You can add collaborators to repositories allowing them to contribute (i.e. <code>push</code>/<code>pull</code>).</p>
+<p>To do this navigate to your planets repository and click on the “Settings” tab on the far right hand side. Select “Collaborators” (under the ‘Access’ heading).</p>
+<p>You can now add collaborators to the repository by searching their username or email address.</p>
+<p>While we won’t have time to explore this in detail during this workshop you find more on collaborating <a href="https://swcarpentry.github.io/git-novice/08-collab/index.html" class="external-link">here</a>.</p>
 </div>
-<div id="on-going-authentication" class="callout-inner">
-<h3 class="callout-title">On-going Authentication<a class="anchor" aria-label="anchor" href="#on-going-authentication"></a>
-</h3>
-<div class="callout-content">
-<p>You won’t have to enter your username and password until your PAT expires. For updating your PAT check out tutorials for <a href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain" class="external-link">macOS keychain</a>. Alternatively you can use <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">GitHub CLI or Git Credential Manager (GCM) to remember your credentials</a>.</p>
-</div>
-</div>
-</div>
-<hr><div id="keypoints1" class="callout keypoints">
+<figure><img src="../fig/github-add-collaborators-01.png" class="figure mx-auto d-block"></figure><figure><img src="../fig/github-add-collaborators-02.png" class="figure mx-auto d-block"></figure><hr><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -720,12 +791,12 @@ any links that you are not going to use.
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/06-ignore.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/08-wrap-up.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/08-wrapup.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="../instructor/06-ignore.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Ignoring Things</a>
-        <a class="chapter-link float-end" href="../instructor/08-wrap-up.html" rel="next">Next: Wrap-up... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/08-wrapup.html" rel="next">Next: Wrap-up... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div> <!-- / div.primary-content.col-xs-12 -->
 <!-- END:   inst/pkgdown/templates/content-instructor.html-->
@@ -764,8 +835,8 @@ any links that you are not going to use.
   "url": "https://siobhon-egan.github.io/git-command-line/instructor/07-remotes.html",
   "identifier": "https://siobhon-egan.github.io/git-command-line/instructor/07-remotes.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-08-31",
-  "datePublished": "2022-08-31"
+  "dateModified": "2022-09-05",
+  "datePublished": "2022-09-05"
 }
 
   </script><script>
