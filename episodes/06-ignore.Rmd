@@ -15,8 +15,6 @@ title: 'Ignoring Things'
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-## Ignoring
-
 What if we have files that we do not want Git to track for us, like backup files created by our editor or intermediate files created during data analysis? Let’s create a few dummy files:
 
 ```bash
@@ -327,6 +325,7 @@ You want to keep them but you do not want to track them through `git`.
 
 1. append either `log_*` or `log*` as a new entry in your `.gitignore`
 2. track `log_01` using` git add -f log_01`
+
 :::::: 
 
 

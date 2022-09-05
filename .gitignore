@@ -51,3 +51,6 @@ po/*~
 
 # DS store
 .DS_Store
+
+# my temp file for storing helpful items locally
+temp.Rmd

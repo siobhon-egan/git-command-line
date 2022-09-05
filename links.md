@@ -9,4 +9,9 @@ any links that you are not going to use.
 [carpentries-workbench]: https://carpentries.github.io/sandpaper-docs/
 [commit-messages]: https://chris.beams.io/posts/git-commit/
 [git-references]: https://git-scm.com/book/en/v2/Git-Internals-Git-References
-
+[sw-git-novice]: https://swcarpentry.github.io/git-novice/index.html
+[github]: https://github.com/
+[bitbucket]: https://bitbucket.org/
+[gitlab]: https://gitlab.com/
+[shell-novice]: https://swcarpentry.github.io/shell-novice/
+[stackoverflow]: https://stackoverflow.com/

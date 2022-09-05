@@ -26,9 +26,11 @@ You should be in the `planets` directory.
 cd ~/Desktop/planets
 ```
 
+## Create and edit a new file
+
 Let's create a file called `mars.txt` that contains some notes
 about the Red Planet's suitability as a base. We'll use `nano` to edit the file; you can use whatever editor you like.
-In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the bash command to create or edit a new file will depend on the editor you choose (it might not be `nano`). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create/) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
+In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the bash command to create or edit a new file will depend on the editor you choose (it might not be `nano`). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create/) in [The Unix Shell][shell-novice] lesson.
 
 ```bash
 nano mars.txt
@@ -47,7 +49,7 @@ Cold and dry, but everything is my favorite color
 When you open nano it was appear like this. Start typing your text.
 ![](fig/nano-01.png)
 
-In this case "Cold and dry, but everything is my favorite color"
+In this case `Cold and dry, but everything is my favorite color`
 ![](fig/nano-02.png)
 
 To exit the editor press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>. _To exit **without** saving changes press <kbd>N</kbd> and <kbd>Return</kbd>_
@@ -76,6 +78,9 @@ cat mars.txt
 Cold and dry, but everything is my favorite color
 ```
 
+## Check status
+
+
 If we check the status of our project again,
 Git tells us that it's noticed the new file:
 
@@ -98,6 +103,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 The "untracked files" message means that there's a file in the directory
 that Git isn't keeping track of.
+
+## `git add`
+
+
 We can tell Git to track a file using `git add`:
 
 ```bash
@@ -121,10 +130,12 @@ Changes to be committed:
 	new file:   mars.txt
 ```
 
-Git now knows that it's supposed to keep track of `mars.txt`,
-but it hasn't recorded these changes as a commit yet.
-To get it to do that,
-we need to run one more command:
+
+## `git commit`
+
+
+Git now knows that it's supposed to keep track of `mars.txt`, but it hasn't recorded these changes as a commit yet.
+To get it to do that, we need to run one more command:
 
 ```bash
 git commit -m "Start notes on Mars as a base"
@@ -136,17 +147,11 @@ git commit -m "Start notes on Mars as a base"
  create mode 100644 mars.txt
 ```
 
-When we run `git commit`,
-Git takes everything we have told it to save by using `git add`
-and stores a copy permanently inside the special `.git` directory.
-This permanent copy is called a commit
-(or revision) and its short identifier is `f22b25e`. Your commit may have another identifier.
+When we run `git commit`, Git takes everything we have told it to save by using `git add` and stores a copy permanently inside the special `.git` directory.
+This permanent copy is called a [commit](../learners/reference.md#glossary) (or [revision](../learners/reference.md#glossary)) and its short identifier is `f22b25e`. Your commit may have another identifier.
 
-We use the `-m` flag (for "message")
-to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
-If we just run `git commit` without the `-m` option,
-Git will launch `nano` (or whatever other editor we configured as `core.editor`) so that we can write a longer message.
-
+We use the `-m` flag (for "message") to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
+If we just run `git commit` without the `-m` option, Git will launch `nano` (or whatever other editor we configured as `core.editor`) so that we can write a longer message.
 
 [Good commit messages](https://chris.beams.io/posts/git-commit/) start with a brief (<50 characters) statement about the changes made in the commit. Generally, the message should complete the sentence "If applied, this commit will" <commit message here>. If you want to go into more detail, add a blank line between the summary line and your additional notes. Use this additional space to explain why you made changes and/or what their impact will be.
 
@@ -162,8 +167,10 @@ nothing to commit, working directory clean
 ```
 
 it tells us everything is up to date.
-If we want to know what we've done recently,
-we can ask Git to show us the project's history using `git log`:
+
+## `git log` and `git diff`
+
+If we want to know what we've done recently, we can ask Git to show us the project's history using `git log`:
 
 ```bash
 git log
@@ -243,7 +250,7 @@ The output is cryptic because it is actually a series of commands for tools like
 
 1. The first line tells us that Git is producing output similar to the Unix `diff` command comparing the old and new versions of the file.
 2. The second line tells exactly which versions of the file Git is comparing; `df0654a` and `315bf3a` are unique computer-generated labels for those versions.
-T3. he third and fourth lines once again show the name of the file being changed.
+3. The third and fourth lines once again show the name of the file being changed.
 4. The remaining lines are the most interesting, they show us the actual differences and the lines on which they occur. In particular, the `+` marker in the first column shows where we added a line.
 
 After reviewing our change, it’s time to commit it:
@@ -280,34 +287,20 @@ Git insists that we add files to the set we want to commit before actually commi
 To allow for this, Git has a special staging area where it keeps track of things that have been added to the current [changeset](../learners/reference.md) but not yet committed.
 
 
-:::::: discussion
+:::::: callout
 
 ## Staging Area
 
-If you think of Git as taking snapshots of changes over the life of a project,
-`git add` specifies *what* will go in a snapshot
-(putting things in the staging area),
-and `git commit` then *actually takes* the snapshot, and
-makes a permanent record of it (as a commit).
-If you don't have anything staged when you type `git commit`,
-Git will prompt you to use `git commit -a` or `git commit --all`,
-which is kind of like gathering *everyone* to take a group photo!
-However, it's almost always better to
-explicitly add things to the staging area, because you might
-commit changes you forgot you made. (Going back to the group photo simile,
-you might get an extra with incomplete makeup walking on
-the stage for the picture because you used `-a`!)
-Try to stage things manually,
-or you might find yourself searching for "git undo commit" more
-than you would like!
+If you think of Git as taking snapshots of changes over the life of a project, `git add` specifies *what* will go in a snapshot (putting things in the staging area), and `git commit` then *actually takes* the snapshot, and makes a permanent record of it (as a commit).
+If you don't have anything staged when you type `git commit`, Git will prompt you to use `git commit -a` or `git commit --all`, which is kind of like gathering *everyone* to take a group photo!
+However, it's almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. (Going back to the group photo simile, you might get an extra with incomplete makeup walking on the stage for the picture because you used `-a`!)
+Try to stage things manually, or you might find yourself searching for "git undo commit" more than you would like!
 
 ::::::
 
 ![The Git Staging Area](fig/git-staging-area.svg)
 
-Let's watch as our changes to a file move from our editor
-to the staging area
-and into long-term storage.
+Let's watch as our changes to a file move from our editor to the staging area and into long-term storage.
 First, we'll add another line to the file:
 
 ```bash
@@ -347,10 +340,7 @@ git add mars.txt
 git diff
 ```
 
-There is no output:
-as far as Git can tell,
-there's no difference between what it's been asked to save permanently
-and what's currently in the directory.
+There is no output: as far as Git can tell, there's no difference between what it's been asked to save permanently and what's currently in the directory.
 However, if we do this:
 
 ```bash
@@ -368,10 +358,7 @@ index 315bf3a..b36abfd 100644
 +But the Mummy will appreciate the lack of humidity
 ```
 
-it shows us the difference between
-the last committed change
-and what's in the staging area.
-Let's save our changes:
+it shows us the difference between the last committed change and what's in the staging area. Let's save our changes:
 
 ```
 git commit -m "Discuss concerns about Mars' climate for Mummy"
@@ -430,7 +417,7 @@ words using colors.
 
 :::::: 
 
-:::::: discussion
+:::::: callout
 
 
 ## Paging the Log
@@ -446,7 +433,7 @@ screen is a `:`, instead of your usual prompt.
 
 :::::: 
 
-:::::: discussion
+:::::: callout
 
 ## Limit Log Size
 
@@ -497,13 +484,16 @@ git log --oneline --graph
 
 :::::: 
 
+
+## Exercises 
+
 :::::: discussion
 
 ## Directories
 
 Two important facts you should know about directories in Git.
 
-**1**. *Git does not track directories on their own, only files within them.*
+**1. Git does not track directories on their own, only files within them.**
 
 Try it for yourself:
 
@@ -515,7 +505,7 @@ git status
 ```
 Note, our newly created empty directory `spaceships` does not appear in the list of untracked files even if we explicitly add it (_via_ `git add`) to our repository. This is the reason why you will sometimes see `.gitkeep` files in otherwise empty directories. Unlike `.gitignore`, these files are not special and their sole purpose is to populate a directory so that Git adds it to the repository. In fact, you can name such files anything you like.
 
-**2**. &If you create a directory in your Git repository and populate it with files, you can add all files in the directory at once by:&
+**2. If you create a directory in your Git repository and populate it with files, you can add all files in the directory at once by**
 
 ```bash
 git add <directory-with-files>
@@ -652,57 +642,6 @@ git commit -m "Write plans to start a base on Venus"
  Write plans to start a base on Venus
  2 files changed, 2 insertions(+)
  create mode 100644 venus.txt
-```
-
-:::::: 
-
-:::::: discussion
-
-## `bio` Repository
-
-* Create a new Git repository on your computer called `bio`.
-* Write a three-line biography for yourself in a file called `me.txt`,
-commit your changes
-* Modify one line, add a fourth line
-* Display the differences
-between its updated state and its original state.
-
-:::::: 
-
-:::::: solution
-
-If needed, move out of the `planets` folder:
-
-```bash
-cd ..
-```
-Create a new folder called `bio` and 'move' into it:
-
-```bash
-mkdir bio
-cd bio
-```
-
-Initialise git:
-
-```bash
-git init
-```
-
-Create your biography file `me.txt` using `nano` or another text editor.
-Once in place, add and commit it to the repository:
-
-```bash
-git add me.txt
-git commit -m "Add biography file" 
-```
-
-Modify the file as described (modify one line, add a fourth line).
-To display the differences
-between its updated state and its original state, use `git diff`:
-
-```bash
-git diff me.txt
 ```
 
 :::::: 

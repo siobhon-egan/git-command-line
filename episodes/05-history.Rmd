@@ -466,19 +466,6 @@ So, `cat venus.txt` will output
 
 :::::: discussion
 
-## Checking Understanding of `git diff`
-
-Consider this command: `git diff HEAD~9 mars.txt`. What do you predict this command
-will do if you execute it? What happens when you do execute it? Why?
-
-Try another command, `git diff [ID] mars.txt`, where [ID] is replaced with
-the unique identifier for your most recent commit. What do you think will happen,
-and what does happen?
-
-:::::: 
-
-:::::: discussion
-
 ## Getting Rid of Staged Changes
 
 `git checkout` can be used to restore a previous commit when unstaged changes have
