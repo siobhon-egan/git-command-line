@@ -4,7 +4,7 @@ The content here been reproduced and slightly modified from the software carpent
 
 > **Quick Link**
 >
-> tinyurl.com/resbaz-git
+> [tinyurl.com/resbaz-perth2022-git](https://tinyurl.com/resbaz-perth2022-git)
 >
 
 ### Target audience
