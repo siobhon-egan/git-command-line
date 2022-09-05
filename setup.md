@@ -145,8 +145,11 @@ If Git is not already available on your machine you can try to install it via yo
 ### Details
 
 When you're writing code, it's nice to have a text editor that is optimized for writing code, with features like automatic color-coding of key words. 
-The default text editor on macOS and Linux is usually set to *Vim*, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to return to the shell.
-To exit *nano* text editor (which is recommended during later lessons) press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.
+
+_**Exiting common text editors**_
+
+The default text editor on macOS and Linux is usually set to **Vim**, which is not famous for being intuitive. If you accidentally find yourself stuck in it, hit the <kbd>Esc</kbd> key, followed by <kbd>:</kbd> + <kbd>Q</kbd> + <kbd>!</kbd> (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to return to the shell.
+To exit **nano** text editor (which is recommended during later lessons) press <kbd>Control</kbd> + <kbd>X</kbd>, it will prompt you to save changes press <kbd>Y</kbd> and <kbd>Return</kbd>.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 

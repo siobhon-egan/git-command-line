@@ -23,8 +23,8 @@ only thing missing is to copy changes from one repository to another.
 Systems like Git allow us to move work between any two repositories.  In
 practice, though, it's easiest to use one copy as a central hub, and to keep it
 on the web rather than on someone's laptop.  Most programmers use hosting
-services like [GitHub](https://github.com), [Bitbucket](https://bitbucket.org) or
-[GitLab](https://gitlab.com/) to hold those main copies; we'll explore the pros
+services like [GitHub][github], [Bitbucket][bitbucket] or
+[GitLab][gitlab] to hold those main copies; we'll explore the pros
 and cons of this in a later episode.
 
 Let's start by sharing the changes we've made to our current project with the
@@ -33,12 +33,11 @@ world. To this end we are going to create a *remote* repository that will be lin
 
 ## 1. Create a remote repository
 
-Log in to [GitHub](https://github.com), then click on the icon in the top right corner to
-create a new repository called `planets`:
+Log in to [GitHub][github], then click on the icon in the top right corner to create a new repository.
 
 ![](fig/github-create-repo-01.png)
 
-Name your repository "planets" and then click "Create Repository".
+Name your repository `planets` and then click "Create Repository".
 
 **Note**: Since this repository will be connected to a local repository, it needs to be empty. Leave "Initialize this repository with a README" **unchecked**, and keep "None" as options for both "Add .gitignore" and "Add a license." See the "GitHub License and README files" exercise below for a full explanation of why the repository needs to be empty.
 
@@ -57,9 +56,7 @@ cd planets
 git init
 ```
 
-If you remember back to the earlier [episode](04-changes.html) where we added and
-committed our earlier work on `mars.txt`, we had a diagram of the local repository
-which looked like this:
+If you remember back to the earlier [episode](04-changes.html) where we added and committed our earlier work on `mars.txt`, we had a diagram of the local repository which looked like this:
 
 ![The Local Repository with Git Staging Area](fig/git-staging-area.svg)
 
@@ -67,8 +64,7 @@ Now that we have two repositories, we need a diagram like this:
 
 ![Freshly-Made GitHub Repository](fig/git-freshly-made-github-repo.svg)
 
-Note that our local repository still contains our earlier work on `mars.txt`, but the
-remote repository on GitHub appears empty as it doesn't contain any files yet.
+Note that our local repository still contains our earlier work on `mars.txt`, but the remote repository on GitHub appears empty as it doesn't contain any files yet.
 
 ## 2. Create a personal access token
 
@@ -107,17 +103,18 @@ To get this processing going quicker we will get started by creating our own rep
 Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.
 
 1. Verify your email address, if it hasn't been verified yet.
-2. In the upper-right corner of any page, click your profile photo, then click Settings.
-  - ![](fig/github-PAT-01.png){width=30%}
-3. In the left sidebar, click  Developer settings.
-  - ![](fig/github-PAT-02.png){ width=40% }
-4. In the left sidebar, click Personal access tokens.
-  - ![](fig/github-PAT-03.png){ width=40% }
-5. Click Generate new token.
-6. Give your token a descriptive name.
-7. To give your token an expiration, select the Expiration drop-down menu, then click a default or use the calendar picker.
+2. In the upper-right corner of any page, click your profile photo, then select "Settings".
+  - ![](fig/github-PAT-01.png){width=20%}
+3. In the left sidebar, select "Developer settings" (at the bottom of the list.
+  - ![](fig/github-PAT-02.png){ width=20% }
+4. In the left sidebar, select "Personal access tokens".
+  - ![](fig/github-PAT-03.png){ width=20% }
+5. select "Generate new token".
   - ![](fig/github-PAT-04.png)
+6. Give your token a name - e.g. I used "uni-macbook" in this example.
+7. You need to provide an expiration for the token. It's a personal choice but I suggest selecting something > 1 month. You may want to re-visit this tutorial in 2 weeks time for example and it will help you if your token is still valid. I suggest you select the Expiration drop-down menu and choose "custom", then click a default or use the calendar picker (In the example below I selected end of the year 2022 for expiry)
   - ![](fig/github-PAT-05.png)
+  - ![](fig/github-PAT-06.png)
 8. Select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select repo.
 
 - *Suggested options for selection*:
@@ -131,14 +128,14 @@ Personal access tokens (PATs) are an alternative to using passwords for authenti
   - :white_check_mark: **project**
 
 9. Click Generate token.
-  - ![](fig/github-PAT-06.png)
+  - ![](fig/github-PAT-07.png)
 
 
 :::::::::::::: callout
 
-### Warning
+### :exclamation: Warning
 
-*Immediately copy and paste this token into a text document so we can use it in the next step.*
+**Immediately copy and paste this token into a text document so we can use it in the next step.**     
 Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
 
 ::::::::::::::
@@ -154,13 +151,13 @@ The home page of the repository on GitHub includes the URL string we need to ide
 ![Where to Find Repository URL on GitHub](fig/github-find-repo-string.png)
 
 
-> Make sure you copy the HTTPS URL for cloining
+> Make sure you copy the **HTTPS** URL for cloining
 
 Copy that URL from the browser, go into the local `planets` repository, and run
 this command:
 
 ```bash
-git remote add origin https://github.com/siobhon-egan/planets.git
+git remote add origin https://github.com/vlad/planets.git
 ```
 
 Make sure to use the URL for your repository rather than Vlad's: the only
@@ -181,13 +178,73 @@ origin   https://github.com/vlad/planets.git (fetch)
 origin   https://github.com/vlad/planets.git (push)
 ```
 
-:::::::::::::: callout
+:::::::::::::: discussion
 
-### Using a token on the command line
+### Securly Storing Your Personal Access Token
 
-If you are not prompted for your username and password, your credentials may be cached on your computer. You can update your credentials in the Keychain to replace your old password with the token.
+As a PAT is used in place of your password by default it will need to be re-entered whenever you push to the remote GitHub repository. It is recommended you use a password manager to store these credentials.
 
-Instead of manually entering your PAT for every HTTPS Git operation, you can cache your PAT with a Git client. Git will temporarily store your credentials in memory until an expiry interval has passed. You can also store the token in a plain text file that Git can read before every request. For more information, see "[Caching your GitHub credentials in Git](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)."
+When your PAT expires you will need to ensure you update these saved credentials. 
+
+If you are not prompted for your username and password, your credentials may be cached on your computer. You should update your credentials to replace your old password with the token.
+
+::::::::::::::
+
+:::::::::::::: solution
+
+### MacOS
+
+When you first push to the GitHub repository, you will be asked for a username and password. Provide your GitHub account username as the username and the PAT as the password. Once Git has successfully connected with the remote repository, the PAT will be automatically added to the Mac Keychain Access app. After this, there is no need to re-enter the PAT for future clone, push or pull actions.
+
+If you need to update the credentials stored in the Mac Keychain Access app, these [instructions](https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain) are useful.
+
+Alternatively you can use [GitHub CLI or Git Credential Manager (GCM) to remember your credentials](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
+
+::::::::::::::
+
+:::::::::::::: solution
+
+### Windows
+
+For Windows, the recommended option is to use the Git Credential Manager (GCM), which is included with GitBash (Git for Windows).
+
+![](fig/git-for-windows-CM.jpeg)
+
+When you first push to a public GitHub repository, or clone a private GitHub repository, you will be prompted by the below window. Choose to login via “Token”, and enter your PAT.
+
+![](fig/token-gitforwindows.jpeg)
+
+
+The GCM via GitBash automatically stores the entered PAT. In future cloning, pushing, or pulling the PAT will be automatically retrieved using the GCM.
+
+Here you can find additional [Instructions for GCM](https://github.com/GitCredentialManager/git-credential-manager) from the official GitHub Repository.
+
+:::::::::::::: 
+
+:::::::::::::: solution
+
+### Linux (Ubuntu)
+
+Linux (Ubuntu) users are recommended to use the GitHub Command Line Interface (GitHub CLI).
+
+```bash
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+
+sudo apt update
+
+sudo apt install gh
+```
+Enter ‘gh auth login’ and follow the prompts. When prompted for your preferred protocol for Git operations, select HTTPS and, when asked if you would like to authenticate to Git with your GitHub credentials, enter Y.
+
+:::::::::::::: 
+
+:::::::::::::: solution
+
+### Alternative
+
+Alternatively you can use [GitHub CLI or Git Credential Manager (GCM) to remember your credentials](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
 
 ::::::::::::::
 
@@ -405,15 +462,21 @@ create mode 100644 README.md
 
 ::::::
 
-:::::: callout
+<div class="alert alert-success">
+  <strong>&#128396; Collaborators!</strong> 
+  
+  You can add collaborators to repositories allowing them to contribute (i.e. `push`/`pull`). 
+  
+  To do this navigate to your planets repository and click on the "Settings" tab on the far right hand side. Select "Collaborators" (under the 'Access' heading).
+  
+  You can now add collaborators to the repository by searching their username or email address.
+  
+  While we won't have time to explore this in detail during this workshop you find more on collaborating [here](https://swcarpentry.github.io/git-novice/08-collab/index.html).
+</div>
 
-## On-going Authentication
+![](fig/github-add-collaborators-01.png)
 
-You won't have to enter your username and password until your PAT expires. For updating your PAT check out tutorials for [macOS keychain](https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain). Alternatively you can use [GitHub CLI or Git Credential Manager (GCM) to remember your credentials](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
-
-::::::
-
-
+![](fig/github-add-collaborators-02.png)
 
 ---
 

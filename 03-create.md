@@ -13,11 +13,6 @@ title: 'Creating a Repository'
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-
-## Your first repository
-
-Once Git is configured, we can start using it.
-
 We will continue with the story of Wolfman and Dracula who are investigating if it is possible to send a planetary lander to Mars. 
 
 ![motivatingexample](fig/motivatingexample.png)
@@ -35,6 +30,8 @@ Courtesy NASA/JPL-Caltech.
 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
 
 
+## New directory
+
 First, let's create a new directory in the `Desktop` folder for our work and then change the current working directory to the newly created one:
 
 ```bash
@@ -43,8 +40,9 @@ mkdir planets
 cd planets
 ```
 
-Then we tell Git to make `planets` a repository -- a place where Git can store versions of our files:
+## `git init`
 
+Then we tell Git to make `planets` a [repository](../learners/reference.md#glossary) -- a place where Git can store versions of our files:
 
 ```bash
 git init
@@ -70,6 +68,8 @@ ls -a
 
 Git uses this special subdirectory to store all the information about the project,  including the tracked files and sub-directories located within the project's directory.
 If we ever delete the `.git` subdirectory, we will lose the project's history.
+
+## Default branch
 
 Next, we will change the default branch to be called `main`.
 This might be the default branch depending on your settings and version of git.
