@@ -398,7 +398,7 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory a Git repository because the <code>planets</code> repository can track any files, sub-directories, and subdirectory files under the <code>planets</code> directory. Thus, in order to track all information about moons, Dracula only needed to add the <code>moons</code> subdirectory to the <code>planets</code> directory.</p>
 <p>Additionally, Git repositories can interfere with each other if they are “nested”: the outer repository will try to version-control the inner repository. Therefore, it’s best to create each new Git repository in a separate directory. To be sure that there is no conflicting repository in the directory, check the output of <code>git status</code>. If it looks like the following, you are good to go to create a new repository as shown above:</p>
@@ -435,7 +435,7 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a></h3>
@@ -527,7 +527,7 @@ any links that you are not going to use.
   "identifier": "https://siobhon-egan.github.io/git-command-line/03-create.html",
   "dateCreated": "2022-08-26",
   "dateModified": "2022-09-05",
-  "datePublished": "2022-09-05"
+  "datePublished": "2022-09-06"
 }
 
   </script><script>
