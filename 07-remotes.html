@@ -333,7 +333,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="why-https" class="callout-inner">
-<h3 class="callout-title">Why HTTPS?<a class="anchor" aria-label="anchor" href="#why-https"></a>
+<h3 class="callout-title">Why HTTPS?<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
 <p>The <code>https://</code> clone URLs are available on all repositories, regardless of visibility. <code>https://</code> clone URLs work even if you are behind a firewall or proxy.</p>
@@ -387,7 +387,7 @@
 </div>
 <div id="warning" class="callout-inner">
 <h3 class="callout-title">
-<span class="emoji" data-emoji="exclamation">❗</span> Warning<a class="anchor" aria-label="anchor" href="#warning"></a>
+<span class="emoji" data-emoji="exclamation">❗</span> Warning<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
 <p><strong>Immediately copy and paste this token into a text document so we can use it in the next step.</strong><br>
@@ -429,7 +429,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="securly-storing-your-personal-access-token" class="callout-inner">
-<h3 class="callout-title">Securly Storing Your Personal Access Token<a class="anchor" aria-label="anchor" href="#securly-storing-your-personal-access-token"></a>
+<h3 class="callout-title">Securly Storing Your Personal Access Token<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
 <p>As a PAT is used in place of your password by default it will need to be re-entered whenever you push to the remote GitHub repository. It is recommended you use a password manager to store these credentials.</p>
@@ -445,7 +445,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>When you first push to the GitHub repository, you will be asked for a username and password. Provide your GitHub account username as the username and the PAT as the password. Once Git has successfully connected with the remote repository, the PAT will be automatically added to the Mac Keychain Access app. After this, there is no need to re-enter the PAT for future clone, push or pull actions.</p>
 <p>If you need to update the credentials stored in the Mac Keychain Access app, these <a href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain" class="external-link">instructions</a> are useful.</p>
@@ -461,7 +461,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   Windows
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>For Windows, the recommended option is to use the Git Credential Manager (GCM), which is included with GitBash (Git for Windows).</p>
 <figure><img src="fig/git-for-windows-CM.jpeg" class="figure mx-auto d-block"></figure><p>When you first push to a public GitHub repository, or clone a private GitHub repository, you will be prompted by the below window. Choose to login via “Token”, and enter your PAT.</p>
@@ -478,7 +478,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   Linux (Ubuntu)
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Linux (Ubuntu) users are recommended to use the GitHub Command Line Interface (GitHub CLI).</p>
 <div class="codewrapper sourceCode" id="cb5">
@@ -504,7 +504,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   Alternative
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Alternatively you can use <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">GitHub CLI or Git Credential Manager (GCM) to remember your credentials</a>.</p>
 </div>
@@ -537,7 +537,7 @@ To https://github.com/vlad/planets.git
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="branch-error" class="callout-inner">
-<h3 class="callout-title">Branch error<a class="anchor" aria-label="anchor" href="#branch-error"></a>
+<h3 class="callout-title">Branch error<a class="anchor" aria-label="anchor" href="#discussion2"></a>
 </h3>
 <div class="callout-content">
 <p>If you get the following error it means your branch was not correctly set the branch to <code>main</code> during the <a href="03-create.html">third lesson</a>.</p>
@@ -557,7 +557,7 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>To fix this first we need to change to the main branch this you will will need to change</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -586,7 +586,7 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="the--u-flag" class="callout-inner">
-<h3 class="callout-title">The ‘-u’ Flag<a class="anchor" aria-label="anchor" href="#the--u-flag"></a>
+<h3 class="callout-title">The ‘-u’ Flag<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
 <p>You may see a <code>-u</code> option used with <code>git push</code> in some documentation. This option is synonymous with the <code>--set-upstream-to</code> option for the <code>git branch</code> command, and is used to associate the current branch with a remote branch so that the <code>git pull</code> command can be used without any arguments. To do this, simply use <code>git push -u origin main</code> once the remote has been set up.</p>
@@ -612,7 +612,7 @@ Already up-to-date.</code></pre>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="github-gui" class="callout-inner">
-<h3 class="callout-title">GitHub GUI<a class="anchor" aria-label="anchor" href="#github-gui"></a>
+<h3 class="callout-title">GitHub GUI<a class="anchor" aria-label="anchor" href="#discussion3"></a>
 </h3>
 <div class="callout-content">
 <p>Browse to your <code>planets</code> repository on GitHub. Under the Code tab, find and click on the text that says “XX commits” (where “XX” is some number). Hover over, and click on, the three buttons to the right of each commit. What information can you gather/explore from these buttons? How would you get that same information in the shell?</p>
@@ -626,7 +626,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the full identifier of the commit to the clipboard. In the shell, <code>git log</code> will show you the full commit identifier for each commit.</p>
 <p>When you click on the middle button, you’ll see all of the changes that were made in that particular commit. Green shaded lines indicate additions and red ones removals. In the shell we can do the same thing with <code>git diff</code>. In particular, <code>git diff ID1..ID2</code> where ID1 and ID2 are commit identifiers (e.g. <code>git diff a3bf1e5..041e637</code>) will show the differences between those two commits.</p>
@@ -640,7 +640,7 @@ Already up-to-date.</code></pre>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="uploading-files-directly-in-github-browser" class="callout-inner">
-<h3 class="callout-title">Uploading files directly in GitHub browser<a class="anchor" aria-label="anchor" href="#uploading-files-directly-in-github-browser"></a>
+<h3 class="callout-title">Uploading files directly in GitHub browser<a class="anchor" aria-label="anchor" href="#callout4"></a>
 </h3>
 <div class="callout-content">
 <p>Github also allows you to skip the command line and upload files directly to your repository without having to leave the browser. There are two options. First you can click the “Upload files” button in the toolbar at the top of the file tree. Or, you can drag and drop files from your desktop onto the file tree. You can read more about this <a href="https://help.github.com/articles/adding-a-file-to-a-repository/" class="external-link">on this GitHub page</a></p>
@@ -652,7 +652,7 @@ Already up-to-date.</code></pre>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="github-timestamp" class="callout-inner">
-<h3 class="callout-title">GitHub Timestamp<a class="anchor" aria-label="anchor" href="#github-timestamp"></a>
+<h3 class="callout-title">GitHub Timestamp<a class="anchor" aria-label="anchor" href="#discussion4"></a>
 </h3>
 <div class="callout-content">
 <p>Create a remote repository on GitHub. Push the contents of your local repository to the remote. Make changes to your local repository and push these changes. Go to the repo you just created on GitHub and check the <a href="learners.reference.html">timestamps</a> of the files. How does GitHub record times, and why?</p>
@@ -666,7 +666,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over the timestamp, you can see the exact time at which the last change to the file occurred.</p>
 </div>
@@ -678,7 +678,7 @@ Already up-to-date.</code></pre>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="push-vs.-commit" class="callout-inner">
-<h3 class="callout-title">Push vs. Commit<a class="anchor" aria-label="anchor" href="#push-vs.-commit"></a>
+<h3 class="callout-title">Push vs. Commit<a class="anchor" aria-label="anchor" href="#discussion5"></a>
 </h3>
 <div class="callout-content">
 <p>In this episode, we introduced the “git push” command. How is “git push” different from “git commit”?</p>
@@ -692,7 +692,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.</p>
 </div>
@@ -704,7 +704,7 @@ Already up-to-date.</code></pre>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="github-license-and-readme-files" class="callout-inner">
-<h3 class="callout-title">GitHub License and README files<a class="anchor" aria-label="anchor" href="#github-license-and-readme-files"></a>
+<h3 class="callout-title">GitHub License and README files<a class="anchor" aria-label="anchor" href="#discussion6"></a>
 </h3>
 <div class="callout-content">
 <p>In this episode we learned about creating a remote repository on GitHub, but when you initialized your GitHub repo, you didn’t add a README.md or a license file. If you had, what do you think would have happened when you tried to link your local and remote repositories?</p>
@@ -718,7 +718,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories. When GitHub creates a README.md file, it performs a commit in the remote repository. When you try to pull the remote repository to your local repository, Git detects that they have histories that do not share a common origin and refuses to merge.</p>
 <div class="codewrapper sourceCode" id="cb14">
@@ -771,7 +771,7 @@ create mode 100644 README.md</code></pre>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul><li>A local Git repository can be connected to one or more remote repositories.</li>
@@ -811,8 +811,8 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.5" class="external-link">sandpaper (0.9.5)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.3.1" class="external-link">pegboard (0.3.1)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.10.0" class="external-link">sandpaper (0.10.0)</a>,
+        <a href="https://github.com/carpentries/pegboard/tree/0.3.2" class="external-link">pegboard (0.3.2)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
@@ -835,7 +835,7 @@ any links that you are not going to use.
   "identifier": "https://siobhon-egan.github.io/git-command-line/07-remotes.html",
   "dateCreated": "2022-08-26",
   "dateModified": "2022-09-05",
-  "datePublished": "2022-09-13"
+  "datePublished": "2022-09-20"
 }
 
   </script><script>
