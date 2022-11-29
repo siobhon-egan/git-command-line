@@ -318,7 +318,7 @@
         
 <section id="aio-01-basics"><p>Content from <a href="01-basics.html">Git Basics</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/01-basics.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -417,7 +417,7 @@
 </div>
 </div></section><section id="aio-02-setup"><p>Content from <a href="02-setup.html">Setting Up Git</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/02-setup.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -518,7 +518,7 @@
   Windows
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -536,7 +536,7 @@
   MacOS and linux
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -571,7 +571,7 @@
   More options
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>If you want to change the default editor after today’s session, the table below will help.</p>
 <table class="table">
@@ -756,7 +756,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Creating a Repository</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/03-create.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -890,7 +890,7 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory a Git repository because the <code>planets</code> repository can track any files, sub-directories, and subdirectory files under the <code>planets</code> directory. Thus, in order to track all information about moons, Dracula only needed to add the <code>moons</code> subdirectory to the <code>planets</code> directory.</p>
 <p>Additionally, Git repositories can interfere with each other if they are “nested”: the outer repository will try to version-control the inner repository. Therefore, it’s best to create each new Git repository in a separate directory. To be sure that there is no conflicting repository in the directory, check the output of <code>git status</code>. If it looks like the following, you are good to go to create a new repository as shown above:</p>
@@ -927,7 +927,7 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
@@ -978,7 +978,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-04-changes"><p>Content from <a href="04-changes.html">Tracking Changes</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/04-changes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1535,7 +1535,7 @@ f22b25e Start notes on Mars as a base</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Answer 1 is not descriptive enough, and the purpose of the commit is unclear; and answer 2 is redundant to using “git diff” to see what changed in this commit; but answer 3 is good: short, descriptive, and imperative.</p>
 </div>
@@ -1565,7 +1565,7 @@ f22b25e Start notes on Mars as a base</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Would only create a commit if files have already been staged.</li>
@@ -1601,7 +1601,7 @@ f22b25e Start notes on Mars as a base</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>The output below from <code>cat mars.txt</code> reflects only content added during this exercise. Your output may vary. First we make our changes to the <code>mars.txt</code> and <code>venus.txt</code> files:</p>
 <div class="codewrapper sourceCode" id="cb52">
@@ -1685,7 +1685,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-05-history"><p>Content from <a href="05-history.html">Exploring History</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/05-history.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2131,7 +2131,7 @@ Both 2 and 4</p>
 </div>
 </div></section><section id="aio-06-ignore"><p>Content from <a href="06-ignore.html">Ignoring Things</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/06-ignore.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2561,7 +2561,7 @@ nothing to commit, working directory clean</code></pre>
 </div>
 </div></section><section id="aio-07-remotes"><p>Content from <a href="07-remotes.html">Remotes in GitHub</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/07-remotes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3118,7 +3118,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-08-wrapup"><p>Content from <a href="08-wrapup.html">Wrap-up</a></p>
 <hr>
-<p> Last updated on 2022-09-05 | 
+<p> Last updated on 2022-11-29 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/08-wrapup.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3337,7 +3337,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.10.8)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.10.8" class="external-link">sandpaper (0.10.8)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.2" class="external-link">pegboard (0.3.2)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.9" class="external-link">varnish (0.2.9)</a>.</p>
 			</div>
@@ -3361,8 +3361,8 @@ any links that you are not going to use.
   "url": "https://siobhon-egan.github.io/git-command-line/instructor/aio.html",
   "identifier": "https://siobhon-egan.github.io/git-command-line/instructor/aio.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2022-11-22",
-  "datePublished": "2022-11-22"
+  "dateModified": "2022-11-29",
+  "datePublished": "2022-11-29"
 }
 
   </script><script>
