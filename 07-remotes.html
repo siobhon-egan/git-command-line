@@ -271,7 +271,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Remotes in GitHub</h1>
-        <p> Last updated on 2023-04-04 | 
+        <p> Last updated on 2023-05-02 | 
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/07-remotes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -450,7 +450,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   MacOS
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>When you first push to the GitHub repository, you will be asked for a username and password. Provide your GitHub account username as the username and the PAT as the password. Once Git has successfully connected with the remote repository, the PAT will be automatically added to the Mac Keychain Access app. After this, there is no need to re-enter the PAT for future clone, push or pull actions.</p>
 <p>If you need to update the credentials stored in the Mac Keychain Access app, these <a href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain" class="external-link">instructions</a> are useful.</p>
@@ -466,7 +466,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   Windows
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>For Windows, the recommended option is to use the Git Credential Manager (GCM), which is included with GitBash (Git for Windows).</p>
 <figure><img src="fig/git-for-windows-CM.jpeg" class="figure mx-auto d-block"></figure><p>When you first push to a public GitHub repository, or clone a private GitHub repository, you will be prompted by the below window. Choose to login via “Token”, and enter your PAT.</p>
@@ -483,7 +483,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   Linux (Ubuntu)
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Linux (Ubuntu) users are recommended to use the GitHub Command Line Interface (GitHub CLI).</p>
 <div class="codewrapper sourceCode" id="cb5">
@@ -509,7 +509,7 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
   Alternative
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Alternatively you can use <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">GitHub CLI or Git Credential Manager (GCM) to remember your credentials</a>.</p>
 </div>
@@ -562,7 +562,7 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>To fix this first we need to change to the main branch this you will will need to change</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -631,7 +631,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the full identifier of the commit to the clipboard. In the shell, <code>git log</code> will show you the full commit identifier for each commit.</p>
 <p>When you click on the middle button, you’ll see all of the changes that were made in that particular commit. Green shaded lines indicate additions and red ones removals. In the shell we can do the same thing with <code>git diff</code>. In particular, <code>git diff ID1..ID2</code> where ID1 and ID2 are commit identifiers (e.g. <code>git diff a3bf1e5..041e637</code>) will show the differences between those two commits.</p>
@@ -671,7 +671,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over the timestamp, you can see the exact time at which the last change to the file occurred.</p>
 </div>
@@ -697,7 +697,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.</p>
 </div>
@@ -723,7 +723,7 @@ Already up-to-date.</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories. When GitHub creates a README.md file, it performs a commit in the remote repository. When you try to pull the remote repository to your local repository, Git detects that they have histories that do not share a common origin and refuses to merge.</p>
 <div class="codewrapper sourceCode" id="cb14">
@@ -845,8 +845,8 @@ any links that you are not going to use.
   "url": "https://siobhon-egan.github.io/git-command-line/07-remotes.html",
   "identifier": "https://siobhon-egan.github.io/git-command-line/07-remotes.html",
   "dateCreated": "2022-08-26",
-  "dateModified": "2023-04-04",
-  "datePublished": "2023-04-25"
+  "dateModified": "2023-05-02",
+  "datePublished": "2023-05-02"
 }
 
   </script><script>
