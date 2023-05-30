@@ -157,7 +157,7 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        Creating a Repository
+        3. Creating a Repository
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -306,7 +306,8 @@
 </div>
 </div>
 <p>We will continue with the story of Wolfman and Dracula who are investigating if it is possible to send a planetary lander to Mars.</p>
-<figure><img src="../fig/motivatingexample.png" alt="motivatingexample" class="figure mx-auto d-block"><a href="https://www.deviantart.com/b-maze/art/Werewolf-vs-Dracula-124893530" class="external-link">Werewolf vs dracula</a> by <a href="https://www.deviantart.com/b-maze" class="external-link">b-maze</a> / <a href="https://www.deviantart.com/" class="external-link">Deviant Art</a>. <a href="https://en.wikipedia.org/wiki/File:OSIRIS_Mars_true_color.jpg" class="external-link">Mars</a> by European Space Agency / <a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="external-link">CC-BY-SA 3.0 IGO</a>. <a href="https://commons.wikimedia.org/wiki/File:PIA19873-Pluto-NewHorizons-FlyingPastImage-20150714-transparent.png" class="external-link">Pluto</a> / Courtesy NASA/JPL-Caltech. <a href="https://commons.wikimedia.org/wiki/File:Mummy_icon_-_Noun_Project_4070.svg" class="external-link">Mummy</a> © Gilad Fried / <a href="https://thenounproject.com/" class="external-link">The Noun Project</a> / <a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="external-link">CC BY 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Lune_ico.png" class="external-link">Moon</a> © Luc Viatour / <a href="https://lucnix.be/" class="external-link">https://lucnix.be</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" class="external-link">CC BY-SA 3.0</a>.</figure><section id="new-directory"><h2 class="section-heading">New directory<a class="anchor" aria-label="anchor" href="#new-directory"></a>
+<p><img src="../fig/motivatingexample.png" alt="motivatingexample" class="figure"><a href="https://www.deviantart.com/b-maze/art/Werewolf-vs-Dracula-124893530" class="external-link">Werewolf vs dracula</a> by <a href="https://www.deviantart.com/b-maze" class="external-link">b-maze</a> / <a href="https://www.deviantart.com/" class="external-link">Deviant Art</a>. <a href="https://en.wikipedia.org/wiki/File:OSIRIS_Mars_true_color.jpg" class="external-link">Mars</a> by European Space Agency / <a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="external-link">CC-BY-SA 3.0 IGO</a>. <a href="https://commons.wikimedia.org/wiki/File:PIA19873-Pluto-NewHorizons-FlyingPastImage-20150714-transparent.png" class="external-link">Pluto</a> / Courtesy NASA/JPL-Caltech. <a href="https://commons.wikimedia.org/wiki/File:Mummy_icon_-_Noun_Project_4070.svg" class="external-link">Mummy</a> © Gilad Fried / <a href="https://thenounproject.com/" class="external-link">The Noun Project</a> / <a href="https://creativecommons.org/licenses/by/3.0/deed.en" class="external-link">CC BY 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Lune_ico.png" class="external-link">Moon</a> © Luc Viatour / <a href="https://lucnix.be/" class="external-link">https://lucnix.be</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" class="external-link">CC BY-SA 3.0</a>.</p>
+<section id="new-directory"><h2 class="section-heading">New directory<a class="anchor" aria-label="anchor" href="#new-directory"></a>
 </h2>
 <hr class="half-width"><p>First, let’s create a new directory in the <code>Desktop</code> folder for our work and then change the current working directory to the newly created one:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -373,12 +374,12 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)</code></pre>
 </div>
 <p>If you are using a different version of <code>git</code>, the exact wording of the output might be slightly different.</p>
-<div id="discussion1" class="callout discussion">
+<div id="places-to-create-git-repositories" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="places-to-create-git-repositories" class="callout-inner">
-<h3 class="callout-title">Places to Create Git Repositories<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+<h3 class="callout-title">Places to Create Git Repositories<a class="anchor" aria-label="anchor" href="#places-to-create-git-repositories"></a>
 </h3>
 <div class="callout-content">
 <p>Along with tracking information about planets (the project we have already created), Dracula would also like to track information about moons. Despite Wolfman’s concerns, Dracula creates a <code>moons</code> project inside his <code>planets</code> project with the following sequence of commands:</p>
@@ -404,7 +405,7 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory a Git repository because the <code>planets</code> repository can track any files, sub-directories, and subdirectory files under the <code>planets</code> directory. Thus, in order to track all information about moons, Dracula only needed to add the <code>moons</code> subdirectory to the <code>planets</code> directory.</p>
 <p>Additionally, Git repositories can interfere with each other if they are “nested”: the outer repository will try to version-control the inner repository. Therefore, it’s best to create each new Git repository in a separate directory. To be sure that there is no conflicting repository in the directory, check the output of <code>git status</code>. If it looks like the following, you are good to go to create a new repository as shown above:</p>
@@ -422,12 +423,12 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
 </div>
 </div>
 </div>
-<div id="discussion2" class="callout discussion">
+<div id="correcting-git-init-mistakes" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="correcting-git-init-mistakes" class="callout-inner">
-<h3 class="callout-title">Correcting <code>git init</code> Mistakes<a class="anchor" aria-label="anchor" href="#discussion2"></a>
+<h3 class="callout-title">Correcting <code>git init</code> Mistakes<a class="anchor" aria-label="anchor" href="#correcting-git-init-mistakes"></a>
 </h3>
 <div class="callout-content">
 <p>Wolfman explains to Dracula how a nested repository is redundant and may cause confusion down the road. Dracula would like to remove the nested repository. How can Dracula undo his last <code>git init</code> in the <code>moons</code> subdirectory?</p>
@@ -441,7 +442,7 @@ nothing to commit (create/copy files and use "git add" to track)</code></pre>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a></h3>
@@ -515,9 +516,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.2" class="external-link">sandpaper (0.12.2)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.17" class="external-link">varnish (0.2.17)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -539,7 +540,7 @@ any links that you are not going to use.
   "identifier": "https://siobhon-egan.github.io/git-command-line/instructor/03-create.html",
   "dateCreated": "2022-08-26",
   "dateModified": "2023-05-02",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-30"
 }
 
   </script><script>
