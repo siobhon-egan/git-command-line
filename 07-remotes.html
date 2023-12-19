@@ -32,7 +32,7 @@
     </div>
   </div>
   <hr></header><nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav software" aria-label="Main Navigation"><div class="container-fluid nav-container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="menu-title">Menu</span>
     </button>
@@ -43,7 +43,7 @@
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
-      <i role="img" aria-label="search button" data-feather="search"></i>
+        <i role="img" aria-label="search button" data-feather="search"></i>
       -->
     </div>
     <div class="desktop-nav">
@@ -90,7 +90,7 @@
         <!-- START: inst/pkgdown/templates/navbar.html -->
 <div id="sidebar-col" class="col-lg-4">
   <div id="sidebar" class="sidebar">
-      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle">
+      <nav aria-labelledby="flush-headingEleven"><button role="button" aria-label="close menu" alt="close menu" aria-expanded="true" aria-controls="sidebar" class="collapse-toggle" data-collapse="Collapse " data-episodes="Episodes ">
           <i class="search-icon" data-feather="x" role="img"></i>
         </button>
         <div class="sidebar-inner">
@@ -127,14 +127,16 @@
               <div id="flush-collapseEleven" class="accordion-collapse show collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlush11">
 
                 <div class="accordion-body">
-                  <div class="accordion accordion-flush" id="accordionFlush1">
+                  <?xml version="1.0" encoding="UTF-8"?><div class="accordion accordion-flush" id="accordionFlush1">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading1">
-        <a href="index.html">Summary and Setup</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
+      <a href="index.html">Summary and Setup</a>
+    </div>
+    <!--/div.accordion-header-->
+  </div>
+  <!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
 
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
@@ -280,14 +282,14 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Remotes in GitHub</h1>
-        <p> Last updated on 2023-11-21 | 
+        <p>Last updated on 2023-11-21 |
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/07-remotes.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
         
         
         <div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 
         
@@ -408,7 +410,7 @@
 </div>
 <div id="warning" class="callout-inner">
 <h3 class="callout-title">
-<span class="emoji" data-emoji="exclamation">❗</span> Warning<a class="anchor" aria-label="anchor" href="#warning"></a>
+<span class="emoji" data-emoji="exclamation">❗</span>Warning<a class="anchor" aria-label="anchor" href="#warning"></a>
 </h3>
 <div class="callout-content">
 <p><strong>Immediately copy and paste this token into a text document so we can use it in the next step.</strong><br>
@@ -462,11 +464,9 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  MacOS
-  </h4>
+  <h4 class="accordion-header" id="headingSolution1">MacOS</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>When you first push to the GitHub repository, you will be asked for a username and password. Provide your GitHub account username as the username and the PAT as the password. Once Git has successfully connected with the remote repository, the PAT will be automatically added to the Mac Keychain Access app. After this, there is no need to re-enter the PAT for future clone, push or pull actions.</p>
 <p>If you need to update the credentials stored in the Mac Keychain Access app, these <a href="https://docs.github.com/en/get-started/getting-started-with-git/updating-credentials-from-the-macos-keychain" class="external-link">instructions</a> are useful.</p>
@@ -478,11 +478,9 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Windows
-  </h4>
+  <h4 class="accordion-header" id="headingSolution2">Windows</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>For Windows, the recommended option is to use the Git Credential Manager (GCM), which is included with GitBash (Git for Windows).</p>
 <figure><img src="fig/git-for-windows-CM.jpeg" class="figure mx-auto d-block"></figure><p>When you first push to a public GitHub repository, or clone a private GitHub repository, you will be prompted by the below window. Choose to login via “Token”, and enter your PAT.</p>
@@ -495,11 +493,9 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
 <div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Linux (Ubuntu)
-  </h4>
+  <h4 class="accordion-header" id="headingSolution3">Linux (Ubuntu)</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Linux (Ubuntu) users are recommended to use the GitHub Command Line Interface (GitHub CLI).</p>
 <div class="codewrapper sourceCode" id="cb5">
@@ -521,11 +517,9 @@ origin   https://github.com/vlad/planets.git (push)</code></pre>
 <div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  Alternative
-  </h4>
+  <h4 class="accordion-header" id="headingSolution4">Alternative</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Alternatively you can use <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" class="external-link">GitHub CLI or Git Credential Manager (GCM) to remember your credentials</a>.</p>
 </div>
@@ -574,11 +568,9 @@ error: failed to push some refs to 'https://github.com/vlad/planets.git'</code><
 <div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution5">Show me the solution</h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>To fix this first we need to change to the main branch this you will will need to change</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -643,11 +635,9 @@ Already up-to-date.</code></pre>
 <div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution6">Show me the solution</h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the full identifier of the commit to the clipboard. In the shell, <code>git log</code> will show you the full commit identifier for each commit.</p>
 <p>When you click on the middle button, you’ll see all of the changes that were made in that particular commit. Green shaded lines indicate additions and red ones removals. In the shell we can do the same thing with <code>git diff</code>. In particular, <code>git diff ID1..ID2</code> where ID1 and ID2 are commit identifiers (e.g. <code>git diff a3bf1e5..041e637</code>) will show the differences between those two commits.</p>
@@ -683,11 +673,9 @@ Already up-to-date.</code></pre>
 <div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
-  <h4 class="accordion-header" id="headingSolution7">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution7">Show me the solution</h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over the timestamp, you can see the exact time at which the last change to the file occurred.</p>
 </div>
@@ -709,11 +697,9 @@ Already up-to-date.</code></pre>
 <div id="accordionSolution8" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution8" aria-expanded="false" aria-controls="collapseSolution8">
-  <h4 class="accordion-header" id="headingSolution8">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution8">Show me the solution</h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.</p>
 </div>
@@ -735,11 +721,9 @@ Already up-to-date.</code></pre>
 <div id="accordionSolution9" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution9" aria-expanded="false" aria-controls="collapseSolution9">
-  <h4 class="accordion-header" id="headingSolution9">
-  Show me the solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution9">Show me the solution</h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories. When GitHub creates a README.md file, it performs a commit in the remote repository. When you try to pull the remote repository to your local repository, Git detects that they have histories that do not share a common origin and refuses to merge.</p>
 <div class="codewrapper sourceCode" id="cb14">
@@ -792,7 +776,7 @@ create mode 100644 README.md</code></pre>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul><li>A local Git repository can be connected to one or more remote repositories.</li>
@@ -829,13 +813,13 @@ any links that you are not going to use.
 
       </div><!--/div.row-->
       		<footer class="row footer mx-md-3"><hr><div class="col-md-6">
-				<p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
+        <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
         <a href="https://github.com/siobhon-egan/git-command-line/edit/main/episodes/07-remotes.Rmd" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/siobhon-egan/git-command-line/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a> 
+        | <a href="https://github.com/siobhon-egan/git-command-line/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/siobhon-egan/git-command-line/" class="external-link">Source</a></p>
 				<p><a href="https://github.com/siobhon-egan/git-command-line/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:siobhon.egan@murdoch.edu.au">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
@@ -843,15 +827,13 @@ any links that you are not going to use.
         
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
-        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.15.0" class="external-link">sandpaper (0.15.0)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.4.0" class="external-link">varnish (0.4.0)</a>.</p>
+        <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.1" class="external-link">sandpaper (0.16.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.3" class="external-link">pegboard (0.7.3)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
 		<a href="#top">
-			<i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back to top"></i><br><span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
+      <i class="search-icon" data-feather="arrow-up" role="img" aria-label="Back To Top"></i><br><!-- <span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top --><span class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Back</span> To Top
 		</a>
 	</div>
   <script type="application/ld+json">
@@ -868,7 +850,7 @@ any links that you are not going to use.
   "identifier": "https://siobhon-egan.github.io/git-command-line/07-remotes.html",
   "dateCreated": "2022-08-26",
   "dateModified": "2023-11-21",
-  "datePublished": "2023-12-12"
+  "datePublished": "2023-12-19"
 }
 
   </script><script>
